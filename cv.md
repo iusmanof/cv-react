@@ -3,7 +3,7 @@
 |1. | **Igor Usmanov**                 |
 |2. | *Contacts:*                     | 
 |   | +375 44 566 45 61    | 
-|   |igralex1@gmail.com|
+|   |iusmanof@gmail.com|
 |3  |*Summary*|
 |   |Specifically, I like creating something out of nothing. There is an idea and you build it from the ground up. When you begin, there's just an empty text editor. When you're done, there's a working program in the end. I like research. Programming tends to involve much googling and reading through documentation.For me, EPAM is a good company to start my career to realize a lot of things and  idea's|
 |4  |*Skills*|
