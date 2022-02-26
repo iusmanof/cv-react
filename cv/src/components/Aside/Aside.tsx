@@ -1,10 +1,11 @@
 import React from 'react';
 import './Aside.scss'
+import ava from '../../images/ava.png';
 
 function Aside(props) {
     return (
         <aside className="aside">
-            <img className="aside__photo" src="./assets/ava.png" alt="IMG" />
+            <img className="aside__photo" src={ava} alt="IMG" />
             <h2 className="aside__header">Ihar Usmanau</h2>
             <h3 className="aside__position">React Developer</h3>
             <ul className="aside__social-networks">

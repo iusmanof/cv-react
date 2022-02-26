@@ -36,6 +36,14 @@ const webpackConfig = (env): Configuration => ({
                 "sass-loader",
                 ],
             },
+            {
+                test: /\.(png|jpe?g|gif)$/i,
+                loader: 'file-loader',
+                options: {
+                    outputPath: 'images',
+                    name: '[name]-[sha1:hash:7].[ext]',
+                },
+            },
         ]
     },
     plugins: [
