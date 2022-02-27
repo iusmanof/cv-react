@@ -48,57 +48,41 @@
     text-decoration: none;
     color: white;
   }
-   
-  button{
+
+   &__footer{
+    font-weight: 200;
+    font-size: 0.9rem;
+  }
+}
+
+.button{
     border: 1px solid white;
     border-radius: 60px;
     padding: 10px 30px;
     margin-bottom: 220px;
   }
    
-  &__button:hover{
+.button:hover{
     cursor: pointer;
   }
-  &__footer{
-    font-weight: 200;
-    font-size: 0.9rem;
-  }
+.link-vk{
+  background-repeat: no-repeat;
+  display: block;
+  width: 18px;
+  height: 12px;
 }
 
-//  &__photo
-//     border: 1px solid white
-//     border-radius: 50%
-//   &__header
-//     margin: 0
-//     margin-top: 10px
-//     font-weight: 500
-//     font-size: 2rem
-//   &__position
-//     margin: 0 0 40px 0
-//     font-weight: 200
-//     font-size: 1rem
-//   &__social-networks
-//     display: flex
-//     flex-direction: row
-//     justify-content: space-evenly 
-//     width: 40%
-//     padding: 0
-//     margin-bottom: 30px
-//   &__items
-//     margin-left: 0
-//     padding-left: 0
-//   &__item
-//     list-style-type: none
-//   &__link
-//     text-decoration: none
-//     color: white
-//   &__button
-//     border: 1px solid white
-//     border-radius: 60px
-//     padding: 10px 30px
-//     margin-bottom: 220px
-//   &__button:hover
-//     cursor: pointer  
-//   &__footer
-//     font-weight: 200
-//     font-size: 0.9rem
+.link-facebook{
+  background-repeat: no-repeat;
+  display: block;
+  width: 14px;
+  height: 14px  ;
+}
+ 
+.link-linkedin{
+  background-repeat: no-repeat;
+  display: block;
+  width: 14px;
+  height: 14px ;
+}
+  
