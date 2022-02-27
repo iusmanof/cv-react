@@ -1,3 +1,9 @@
+%icons-props {
+  background-repeat: no-repeat;
+  display: block;
+  height: 14px;
+}
+
 .aside{
   display: flex;
   flex-direction: column;
@@ -6,16 +12,15 @@
   width: 550px;
   height: 780px;
   margin-top: 70px;
-  font-family: 'Poppins', sans-serif;
   
   &__photo{
-    border: 1px solid white;
+    border: 3px solid white;
     border-radius: 50%;
   }
   
    &__header{
     margin: 0;
-    margin-top: 10px;
+    margin-top: 65px;
     font-weight: 500;
     font-size: 2rem;
    }
@@ -25,30 +30,16 @@
     font-weight: 200;
     font-size: 1rem;
   }
-   
+    
   &__social-networks{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly ;
-    width: 40%;
+    width: 40%; 
     padding: 0;
     margin-bottom: 30px;
   }
    
-  &__items{
-    margin-left: 0;
-    padding-left: 0;
-  }
-   
-  &__item{
-    list-style-type: none;
-  }
-
-  &__link{
-    text-decoration: none;
-    color: white;
-  }
-
    &__footer{
     font-weight: 200;
     font-size: 0.9rem;
@@ -65,24 +56,9 @@
 .button:hover{
     cursor: pointer;
   }
-.link-vk{
-  background-repeat: no-repeat;
-  display: block;
-  width: 18px;
-  height: 12px;
-}
 
-.link-facebook{
-  background-repeat: no-repeat;
-  display: block;
-  width: 14px;
-  height: 14px  ;
+.link-vk, 
+.link-facebook,  
+.link-linkedin {
+  @extend %icons-props;
 }
- 
-.link-linkedin{
-  background-repeat: no-repeat;
-  display: block;
-  width: 14px;
-  height: 14px ;
-}
-  

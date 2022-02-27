@@ -44,6 +44,17 @@ const webpackConfig = (env): Configuration => ({
                     name: '[name]-[sha1:hash:7].[ext]',
                 },
             },
+             {
+                test: /\.svg$/,
+                use: [
+                {
+                    loader: 'svg-url-loader',
+                    options: {
+                    limit: 10000,
+                    },
+                },
+                ],
+            },
         ]
     },
     plugins: [

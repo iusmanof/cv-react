@@ -14,5 +14,6 @@ npm i eslint eslint-plugin-react eslint-plugin-react-hooks @typescript-eslint/es
 npm install --save-dev css-loader 
 npm install --save-dev style-loader
 npm install sass-loader sass webpack --save-dev
+npm install svg-inline-loader --save-dev
 
 npm install --save-dev favicons favicons-webpack-plugin
