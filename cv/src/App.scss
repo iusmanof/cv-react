@@ -1,21 +1,21 @@
-$back-color: #6A6565;
+$back-color: #6a6565;
 $right-side: #242424;
 
-.wrapper{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 97vh;
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 97vh;
 }
-  
-.content{
-  width: 1280px;
-  height: 780px;
-  background-color: $back-color;
-  border-radius: 35px;
-  color: white;
-  display: flex;
-  flex-direction: row;
-  border-radius: 50px;
-  font-family: 'Poppins', sans-serif;
+
+.content {
+    width: 1280px;
+    height: 780px;
+    background-color: $back-color;
+    border-radius: 35px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    border-radius: 50px;
+    font-family: "Poppins", sans-serif;
 }

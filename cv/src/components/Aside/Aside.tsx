@@ -1,6 +1,6 @@
-import React from 'react';
-import './Aside.scss'
-import ava from '../../images/ava.png';
+import React from "react";
+import "./Aside.scss";
+import ava from "../../images/ava.png";
 
 import vk from "../../images/icons/vk.png";
 import facebook from "../../images/icons/facebook.png";
@@ -15,18 +15,18 @@ function Aside(props) {
             <ul className="aside__social-networks">
                 <li className="aside__item">
                     <a href="" className="aside__link link-vk">
-                      <img src={vk} alt="vk" />
+                        <img src={vk} alt="vk" />
                     </a>
                 </li>
-                <li className="aside__item"> 
+                <li className="aside__item">
                     <a href="" className="aside__link link-facebook">
-                      <img src={facebook} alt="facebook" />
+                        <img src={facebook} alt="facebook" />
                     </a>
                 </li>
                 <li className="aside__item">
                     <a href="" className="aside__link link-linkedin">
-                      <img src={linkedin} alt="linkedin" />
-                   </a>
+                        <img src={linkedin} alt="linkedin" />
+                    </a>
                 </li>
             </ul>
             <div className="button">

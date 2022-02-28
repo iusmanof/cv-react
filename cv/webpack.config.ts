@@ -28,38 +28,34 @@ const webpackConfig = (env): Configuration => ({
                 },
                 exclude: /dist/
             },
-             {
+            {
                 test: /\.s[ac]ss$/i,
-                use: [
-                "style-loader",
-                "css-loader",
-                "sass-loader",
-                ],
+                use: ["style-loader", "css-loader", "sass-loader"]
             },
             {
                 test: /\.(png|jpe?g|gif)$/i,
-                loader: 'file-loader',
+                loader: "file-loader",
                 options: {
-                    outputPath: 'images',
-                    name: '[name]-[sha1:hash:7].[ext]',
-                },
+                    outputPath: "images",
+                    name: "[name]-[sha1:hash:7].[ext]"
+                }
             },
-             {
+            {
                 test: /\.svg$/,
                 use: [
-                {
-                    loader: 'svg-url-loader',
-                    options: {
-                    limit: 10000,
-                    },
-                },
-                ],
-            },
+                    {
+                        loader: "svg-url-loader",
+                        options: {
+                            limit: 10000
+                        }
+                    }
+                ]
+            }
         ]
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: "./public/index.html",
+            template: "./public/index.html"
         }),
         new webpack.DefinePlugin({
             "process.env.PRODUCTION": env.production || !env.development,
@@ -71,7 +67,7 @@ const webpackConfig = (env): Configuration => ({
             //     files: "./src/**/*.{ts,tsx,js,jsx}" // required - same as command `eslint ./src/**/*.{ts,tsx,js,jsx} --ext .ts,.tsx,.js,.jsx`
             // }
         }),
-        new FaviconsWebpackPlugin('./src/images/favicon.ico')
+        new FaviconsWebpackPlugin("./src/images/favicon.ico")
     ]
 });
 
