@@ -1,13 +1,16 @@
 import React from "react";
+import {BrowserRouter as Router, Route, Link} from "react-router-dom";
+
 import "./Nav.scss";
 
 import home from "../../images/navigation/home.svg";
 import about from "../../images/navigation/about.svg";
-import resume from "../../images/navigation/resume.svg";
+import education from "../../images/navigation/education.svg";
 import portfolio from "../../images/navigation/portfolio.svg";
 import contacts from "../../images/navigation/contacts.svg";
 import left from "../../images/navigation/left.svg";
 import right from "../../images/navigation/right.svg";
+import Education from "components/Education";
 
 function Nav(props) {
     return (
@@ -15,27 +18,37 @@ function Nav(props) {
             <ul className="navigation__list">
                 <li className="navigation__item" id="homeToggler">
                     <a className="navigation__link navigation__link-home" href="#home">
-                        <img src={home} alt="home" />
+                        <Link to="/">
+                            <img src={home} alt="home" />
+                        </Link>
                     </a>
                 </li>
                 <li className="navigation__item" id="aboutToggler">
                     <a className="navigation_link navigation_link-about" href="#about-me">
-                        <img src={about} alt="about" />
+                        <Link to="/about">
+                            <img src={about} alt="home" />
+                        </Link>
                     </a>
                 </li>
                 <li className="navigation__item" id="educationToggle">
                     <a className="navigation_link navigation_link-resume" href="#education">
-                        <img src={resume} alt="resume" />
+                        <Link to="/education">
+                            <img src={education} alt="education" />
+                        </Link>
                     </a>
                 </li>
                 <li className="navigation__item" id="porfolioToggler">
                     <a className="navigation_link navigation_link-portfolio" href="#porfolio">
-                        <img src={portfolio} alt="portfolio" />
+                        <Link to="/portfolio">
+                            <img src={portfolio} alt="portfolio" />
+                        </Link>
                     </a>
                 </li>
                 <li className="navigation__item" id="contactsToggler">
                     <a className="navigation_link navigation_link-contacts" href="#contacts">
-                        <img src={contacts} alt="contacts" />
+                        <Link to="/contacts">
+                            <img src={contacts} alt="contacts" />
+                        </Link>
                     </a>
                 </li>
             </ul>
