@@ -14,7 +14,7 @@ interface IProps {}
 const Education: FC<IProps> = (props) => {
     return (
         <div className="education">
-            <h2 className="education__header">Education:</h2>
+            <h2 className="education__header">Education</h2>
             <p className="education__content">
                 <ul>
                     <li>
@@ -39,12 +39,21 @@ const Education: FC<IProps> = (props) => {
                     </li>
                 </ul>
             </p>
-            <img src={js_certificate} alt="js-certificate" className="cert-img" />
-            <img src={nodejs_certificate} alt="nodejs-certificate" className="cert-img" />
 
-            <button>download certificate NodeJS 2021Q4</button>
-            <button>download certificate JS/Front-end 2021Q1</button>
-            <button>download certificate CCNA</button>
+            <ul className="education__certificates">
+                <li>
+                    <img src={js_certificate} alt="js-certificate" className="cert-img" />
+                    <button>download certificate</button>
+                </li>
+                <li>
+                    <img src={nodejs_certificate} alt="nodejs-certificate" className="cert-img" />
+                    <button>download certificate</button>
+                </li>
+                <li>
+                    <img src={nodejs_certificate} alt="nodejs-certificate" className="cert-img" />
+                    <button>download certificate</button>
+                </li>
+            </ul>
         </div>
     );
 };

@@ -6,3 +6,39 @@ $main-color: #242424;
     width: 1300px;
     height: 780px;
 }
+
+.scroll-content {
+    height: 90%;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    margin-right: 15px;
+    margin-top: 25px;
+
+    scrollbar-width: thin;
+    scrollbar-color: #525353 $main-color;
+    border-radius: 28px;
+}
+
+/* width */
+.scroll-content::-moz-scrollbar,
+.scroll-content::-webkit-scrollbar {
+    width: 6px;
+    border-radius: 50px;
+}
+
+/* Track */
+.scroll-content::-webkit-scrollbar-track {
+}
+
+/* Handle */
+.scroll-content::-webkit-scrollbar-thumb,
+.scroll-content::-webkit-scrollbar-thumb {
+    background: #525353;
+    border-radius: 50px;
+}
+
+/* Handle on hover */
+.scroll-content::-webkit-scrollbar-thumb:hover {
+    cursor: pointer;
+    background: #555;
+}

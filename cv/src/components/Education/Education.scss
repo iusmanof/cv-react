@@ -4,20 +4,46 @@
     justify-content: flex-start;
     align-items: flex-start;
     padding: 20px;
+
     &__header {
         font-size: 2rem;
         padding: 20px 0;
     }
+
+    &__content {
+        line-height: 2em;
+        text-align: justify;
+        text-indent: 3%;
+        ul li:before {
+            text-indent: 4px;
+            position: absolute;
+            margin-left: -1.1em;
+        }
+    }
+
+    &__certificates {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+
+        li {
+            display: flex;
+            flex-direction: column;
+        }
+    }
 }
 
 .certificate-true {
-    color: green;
+    color: rgb(80, 248, 80);
 }
 
 .certificate-false {
-    color: blue;
+    color: rgb(236, 253, 2);
 }
 
 .cert-img {
+    padding: 20px;
     width: 300px;
 }

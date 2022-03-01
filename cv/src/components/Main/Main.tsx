@@ -10,13 +10,15 @@ import "./Main.scss";
 function Main(props) {
     return (
         <main className="main">
-            <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/about" element={<About />} />
-                <Route path="/education" element={<Education />} />
-                <Route path="/portfolio" element={<Portfolio />} />
-                <Route path="/contacts" element={<Contacts />} />
-            </Routes>
+            <div className="scroll-content">
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/about" element={<About />} />
+                    <Route path="/education" element={<Education />} />
+                    <Route path="/portfolio" element={<Portfolio />} />
+                    <Route path="/contacts" element={<Contacts />} />
+                </Routes>
+            </div>
         </main>
     );
 }
