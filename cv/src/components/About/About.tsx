@@ -11,11 +11,10 @@ interface IProps {}
 const About: FC<IProps> = (props) => {
     return (
         <div className="about">
-            <h2 className="about__header">About me ...</h2>
+            <h2 className="about__header">About me</h2>
             <p className="about__content">
                 <p>
-                    {" "}
-                    My name’s Igor Usmanov I’m from Belarus. I grew up and live in Minsk I’m 30
+                    My name is Igor Usmanov I’m from Belarus. I grew up and live in Minsk I’m 30
                     years old. I love playing sports, swimming in the pool and learning chess I
                     enjoy studying and lately I have been deeply immersed in programming and I study
                     application development from start to finish.
@@ -28,8 +27,8 @@ const About: FC<IProps> = (props) => {
                     through documentation.
                 </p>
             </p>
-            <h2 className="about__header">Skills...</h2>
-            <p className="about__content">
+            <h2 className="about__header">Skills</h2>
+            <p className="about__skills">
                 <ul>
                     <li>
                         I know the basics of the web direction and use
@@ -44,13 +43,11 @@ const About: FC<IProps> = (props) => {
                     </li>
 
                     <li>
-                        {" "}
                         I have experience in developing using popular frontend frameworks(
                         <b>React</b>,<b>Readux toolkit</b>,<b>Flux</b>)
                     </li>
 
                     <li>
-                        {" "}
                         I created RESTful API and have experience in developing using popular
                         backend frameworks (<b>Node</b>
                         <b>Express</b>,<b>Nest.js</b>, )

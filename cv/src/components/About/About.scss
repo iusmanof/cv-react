@@ -8,4 +8,20 @@
         font-size: 2rem;
         padding: 20px 0;
     }
+    &__content p {
+        line-height: 1.4em;
+        text-align: justify;
+        text-indent: 3%;
+    }
+    &__skills ul li {
+        line-height: 1.4em;
+        text-indent: 3%;
+    }
+
+    &__skills ul li:before {
+        content: "-";
+        text-indent: 4px;
+        position: absolute;
+        margin-left: -1.1em;
+    }
 }

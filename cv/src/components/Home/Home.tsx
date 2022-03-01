@@ -19,7 +19,7 @@ const Home: FC<IProps> = () => (
             <span>react</span>
             <span>redux</span>
         </div>
-           <div className="home__stack">
+        <div className="home__stack">
             <span>node</span>
             <span>express</span>
             <span>nest.js</span>
@@ -33,7 +33,7 @@ const Home: FC<IProps> = () => (
             <span>enzyme</span>
             <span>react testing library</span>
         </div>
-         <div className="home__stack">
+        <div className="home__stack">
             <span>eslint</span>
             <span>prettier</span>
         </div>
