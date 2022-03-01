@@ -33,7 +33,7 @@ const webpackConfig = (env): Configuration => ({
                 use: ["style-loader", "css-loader", "sass-loader"]
             },
             {
-                test: /\.(png|jpe?g|gif)$/i,
+                test: /\.(png|jpeg|jpg|gif)$/i,
                 loader: "file-loader",
                 options: {
                     outputPath: "images",

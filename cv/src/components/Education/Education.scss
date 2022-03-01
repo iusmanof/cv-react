@@ -1,0 +1,24 @@
+.education {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px;
+    &__header {
+        font-size: 2rem;
+        padding: 20px 0;
+    }
+}
+
+.certificate-true {
+    color: green;
+}
+
+.certificate-false {
+    color: blue;
+}
+
+.cert-img {
+    width: 300px;
+    height: 300px;
+}
