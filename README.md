@@ -17,3 +17,8 @@ npm install sass-loader sass webpack --save-dev
 npm install svg-inline-loader --save-dev
 
 npm install --save-dev favicons favicons-webpack-plugin
+
+
+npm i react-router-dom
+- npm i common-config
+@types/webpack-dev-server

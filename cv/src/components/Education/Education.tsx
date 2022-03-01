@@ -1,8 +1,8 @@
 import React, {FC} from "react";
 import "./Education.scss";
 
-import {js_certificate} from "../../images/certificate/js-fronend2021q1/js-fronend2021q1-1.jpg";
-import {nodejs_certificate} from "../../images/certificate/nodejs2021q4/nodejs2021q4-1.jpg";
+import js_certificate from "../../images/certificate/js-fronend2021q1/js-fronend2021q1-1.jpg";
+import nodejs_certificate from "../../images/certificate/nodejs2021q4/nodejs2021q4-1.jpg";
 
 interface IProps {}
 
