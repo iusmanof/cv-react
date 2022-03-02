@@ -37,6 +37,7 @@ const Home: FC<IProps> = () => (
             <span>eslint</span>
             <span>prettier</span>
         </div>
+        <button>btn</button>
     </div>
 );
 

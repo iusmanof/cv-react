@@ -43,15 +43,15 @@ const Education: FC<IProps> = (props) => {
             <ul className="education__certificates">
                 <li>
                     <img src={js_certificate} alt="js-certificate" className="cert-img" />
-                    <button>download certificate</button>
+                    <button className="button__download">download certificate</button>
                 </li>
                 <li>
                     <img src={nodejs_certificate} alt="nodejs-certificate" className="cert-img" />
-                    <button>download certificate</button>
+                    <button className="button__download">download certificate</button>
                 </li>
                 <li>
                     <img src={nodejs_certificate} alt="nodejs-certificate" className="cert-img" />
-                    <button>download certificate</button>
+                    <button className="button__download">download certificate</button>
                 </li>
             </ul>
         </div>

@@ -1,7 +1,7 @@
-$main-color: #242424;
+@import '../../utils/variables.scss';
 
 .main {
-    background-color: $main-color;
+    background-color: $main-dark-color;
     border-radius: 35px;
     width: 1300px;
     height: 780px;
@@ -15,29 +15,27 @@ $main-color: #242424;
     margin-top: 25px;
 
     scrollbar-width: thin;
-    scrollbar-color: #525353 $main-color;
-    border-radius: 28px;
+    scrollbar-color: #525353 $main-dark-color;
 }
 
+
+
 /* width */
-.scroll-content::-moz-scrollbar,
+.scroll-content::-moz-scrollbar{
+ width: 6px;
+    border-radius: 50px;
+}
+
 .scroll-content::-webkit-scrollbar {
     width: 6px;
     border-radius: 50px;
 }
 
-/* Track */
-.scroll-content::-webkit-scrollbar-track {
-}
-
-/* Handle */
-.scroll-content::-webkit-scrollbar-thumb,
 .scroll-content::-webkit-scrollbar-thumb {
     background: #525353;
     border-radius: 50px;
 }
 
-/* Handle on hover */
 .scroll-content::-webkit-scrollbar-thumb:hover {
     cursor: pointer;
     background: #555;
