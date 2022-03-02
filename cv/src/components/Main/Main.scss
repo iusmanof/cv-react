@@ -1,4 +1,4 @@
-@import '../../utils/variables.scss';
+@import "../../utils/variables.scss";
 
 .main {
     background-color: $main-dark-color;
@@ -18,11 +18,9 @@
     scrollbar-color: #525353 $main-dark-color;
 }
 
-
-
 /* width */
-.scroll-content::-moz-scrollbar{
- width: 6px;
+.scroll-content::-moz-scrollbar {
+    width: 6px;
     border-radius: 50px;
 }
 

@@ -8,7 +8,7 @@ interface IProps {}
 
 /**
  * @author
- * @function @Education
+ * @class @Education
  **/
 
 const Education: FC<IProps> = (props) => {

@@ -19,3 +19,18 @@ $right-side: #242424;
     border-radius: 50px;
     font-family: "Poppins", sans-serif;
 }
+
+.bg {
+    position: absolute;
+    width: auto;
+    height: auto;
+    top: -28px;
+    left: -28px;
+    right: -28px;
+    bottom: -28px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+    background: rgba(4, 180, 224, 255);
+}

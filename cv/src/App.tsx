@@ -8,6 +8,7 @@ import React from "react";
 import "./App.scss";
 import "./reset.scss";
 import {BrowserRouter as Router, Routes, Route, Link} from "react-router-dom";
+import bg from "./images/main_background.png";
 
 function App(props) {
     return (
@@ -19,6 +20,7 @@ function App(props) {
                 </div>
                 <Nav />
             </div>
+            <img src={bg} alt="bg" className="bg" />
         </Router>
     );
 }

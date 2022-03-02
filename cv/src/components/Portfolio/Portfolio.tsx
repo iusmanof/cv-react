@@ -1,6 +1,8 @@
 import React, {FC} from "react";
 import "./Portfolio.scss";
 
+import cv from "../../images/projects/cv_project.png";
+
 interface IProps {}
 
 /**
@@ -12,17 +14,64 @@ const Portfolio: FC<IProps> = (props) => {
     return (
         <div className="portfolio">
             <h2 className="portfolio__header">Portfolio</h2>
-            <div className="portfolio__content">
-                <h2>CV</h2>
-                <a href="#"> netlify link</a>
-                <p>Description about cv</p>
-                <h2>Statistic app</h2>
-                <a href="#"> netlify link</a>
-                <p>Description about app</p>
-                <h2>HTML CSS app</h2>
-                <a href="#"> netlify link</a>
-                <p>Description about verstka</p>
-            </div>
+
+            <nav className="portfolio__category">
+                <ul>
+                    <li>All</li>
+                    <li>Front-end</li>
+                    <li>Back-end</li>
+                </ul>
+            </nav>
+
+            <ul className="portfolio__projects">
+                <li>
+                    <div className="portfolio__project">
+                        <img src={cv} alt="cv" />
+                        <span>CV on image</span>
+                    </div>
+                    <h3>Title CV</h3>
+                </li>
+
+                <li>
+                    <div className="portfolio__project">
+                        <img src={cv} alt="cv" />
+                        <span>CV on image</span>
+                    </div>
+                    <h3>Title CV</h3>
+                </li>
+
+                <li>
+                    <div className="portfolio__project">
+                        <img src={cv} alt="cv" />
+                        <span>CV on image</span>
+                    </div>
+                    <h3>Title CV</h3>
+                </li>
+
+                <li>
+                    <div className="portfolio__project">
+                        <img src={cv} alt="cv" />
+                        <span>CV on image</span>
+                    </div>
+                    <h3>Title CV</h3>
+                </li>
+
+                <li>
+                    <div className="portfolio__project">
+                        <img src={cv} alt="cv" />
+                        <span>CV on image</span>
+                    </div>
+                    <h3>Title CV</h3>
+                </li>
+
+                <li>
+                    <div className="portfolio__project">
+                        <img src={cv} alt="cv" />
+                        <span>CV on image</span>
+                    </div>
+                    <h3>Title CV</h3>
+                </li>
+            </ul>
         </div>
     );
 };

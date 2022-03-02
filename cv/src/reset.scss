@@ -132,13 +132,11 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: inherit; 
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
 }
-
-
 
 [role="button"],
 input[type="submit"],
@@ -146,8 +144,8 @@ input[type="reset"],
 input[type="button"],
 button {
     -webkit-box-sizing: content-box;
-       -moz-box-sizing: content-box;
-            box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
 }
 
 input[type="submit"],
@@ -162,10 +160,10 @@ button {
     line-height: normal;
     overflow: visible;
     padding: 0;
-    -webkit-appearance: button; 
-    -webkit-user-select: none; 
-       -moz-user-select: none;
-        -ms-user-select: none;
+    -webkit-appearance: button;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 input::-moz-focus-inner,
 button::-moz-focus-inner {
@@ -181,8 +179,6 @@ button::-moz-focus-inner {
     text-decoration: none;
     white-space: pre;
     -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
-
-
