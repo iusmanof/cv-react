@@ -22,3 +22,5 @@ npm install --save-dev favicons favicons-webpack-plugin
 npm i react-router-dom
 - npm i common-config
 @types/webpack-dev-server
+
+npm install --save react-yandex-maps
