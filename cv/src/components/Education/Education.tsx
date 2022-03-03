@@ -4,6 +4,9 @@ import "./Education.scss";
 import js_certificate from "../../images/certificate/js-fronend2021q1/js-fronend2021q1-1.jpg";
 import nodejs_certificate from "../../images/certificate/nodejs2021q4/nodejs2021q4-1.jpg";
 
+import js_pdf from '../../images/certificate/js-fronend2021q1/js-fronend2021q1.pdf'
+import nodejs_pdf from '../../images/certificate/nodejs2021q4/nodejs2021q4.pdf'
+
 interface IProps {}
 
 /**
@@ -43,15 +46,15 @@ const Education: FC<IProps> = (props) => {
             <ul className="education__certificates">
                 <li>
                     <img src={js_certificate} alt="js-certificate" className="cert-img" />
-                    <button className="button__download">download certificate</button>
+                    <a className="button__download" href={js_pdf} download>download certificate</a>
                 </li>
                 <li>
                     <img src={nodejs_certificate} alt="nodejs-certificate" className="cert-img" />
-                    <button className="button__download">download certificate</button>
+                    <a className="button__download" href={nodejs_pdf} download>download certificate</a>
                 </li>
                 <li>
                     <img src={nodejs_certificate} alt="nodejs-certificate" className="cert-img" />
-                    <button className="button__download">download certificate</button>
+                    <a className="button__download" href={js_pdf} download>download certificate</a>
                 </li>
             </ul>
         </div>

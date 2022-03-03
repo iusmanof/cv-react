@@ -79,6 +79,10 @@ const About: FC<IProps> = (props) => {
                     <li>
                         I have some experience of joint development with the <b> team</b>
                     </li>
+
+                    <li>
+                        For logging on api I'm use <b> Winston</b>
+                    </li>
                 </ul>
             </p>
         </div>

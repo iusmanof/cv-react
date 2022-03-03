@@ -50,6 +50,10 @@ const webpackConfig = (env): Configuration => ({
                         }
                     }
                 ]
+            },
+            {
+                test: /\.(otf|pdf)$/,
+                loader: "file-loader"
             }
         ]
     },

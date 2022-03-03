@@ -6,6 +6,8 @@ import vk from "../../images/icons/vk.png";
 import facebook from "../../images/icons/facebook.png";
 import linkedin from "../../images/icons/linkedin.png";
 
+import cv_pdf from "../../images/certificate/js-fronend2021q1/js-fronend2021q1.pdf";
+
 function Aside(props) {
     return (
         <aside className="aside">
@@ -30,7 +32,9 @@ function Aside(props) {
                 </li>
             </ul>
             <div className="button">
-                <div className="button-dowload">Download CV</div>
+                <a className="button-dowload" href={cv_pdf} target="_blank" download>
+                    Download CV
+                </a>
             </div>
             <div className="aside__footer">&copy; 2021 All Right Reserved</div>
         </aside>
