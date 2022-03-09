@@ -4,14 +4,13 @@ import HtmlWebpackPlugin from "html-webpack-plugin";
 import ForkTsCheckerWebpackPlugin from "fork-ts-checker-webpack-plugin";
 import {TsconfigPathsPlugin} from "tsconfig-paths-webpack-plugin";
 import FaviconsWebpackPlugin from "favicons-webpack-plugin";
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 const webpackConfig = (env): Configuration => ({
     entry: "./src/index.tsx",
     ...(env.production || !env.development ? {} : {devtool: "eval-source-map"}),
     resolve: {
         extensions: [".ts", ".tsx", ".js"],
-        //TODO waiting on https://github.com/dividab/tsconfig-paths-webpack-plugin/issues/61
-        //@ts-ignore
         plugins: [new TsconfigPathsPlugin()]
     },
     output: {
@@ -30,15 +29,16 @@ const webpackConfig = (env): Configuration => ({
             },
             {
                 test: /\.s[ac]ss$/i,
-                use: ["style-loader", "css-loader", "sass-loader"]
+                exclude: path.resolve(__dirname, 'node_modules'),
+                use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"]
             },
             {
-                test: /\.(png|jpeg|jpg|gif)$/i,
-                loader: "file-loader",
-                options: {
-                    outputPath: "images",
-                    name: "[name]-[sha1:hash:7].[ext]"
-                }
+               test: /\.(png|jpeg|jpg|gif)$/i,
+               use: [
+                    {
+                        loader: 'file-loader',
+                    }
+                ]
             },
             {
                 test: /\.svg$/,
@@ -46,7 +46,7 @@ const webpackConfig = (env): Configuration => ({
                     {
                         loader: "svg-url-loader",
                         options: {
-                            limit: 10000
+                            limit: 10000,
                         }
                     }
                 ]
@@ -58,6 +58,7 @@ const webpackConfig = (env): Configuration => ({
         ]
     },
     plugins: [
+        new MiniCssExtractPlugin(),
         new HtmlWebpackPlugin({
             template: "./public/index.html"
         }),

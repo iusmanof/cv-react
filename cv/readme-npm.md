@@ -24,3 +24,7 @@ npm i react-router-dom
 @types/webpack-dev-server
 
 npm install --save react-yandex-maps
+npm install --save-dev mini-css-extract-plugin
+npm install url-loader --save-dev
+
+npm i resolve-url-loader --save-dev

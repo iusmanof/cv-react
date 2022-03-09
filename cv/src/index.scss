@@ -1,3 +1,5 @@
+@import "./utils/variables.scss";
+
 body {
     color: #d5d5d5;
     background-repeat: no-repeat;
@@ -38,4 +40,8 @@ h2::after {
     );
     background-size: 6px 6px;
     z-index: -1;
+}
+
+a:active{
+    color: $border-btn-color;
 }

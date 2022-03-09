@@ -6,10 +6,11 @@ $right-side: #242424;
     align-items: center;
     justify-content: center;
     height: 97vh;
-    background: rgba(4, 180, 224, 255);
 }
 
 .content {
+    position: relative;
+    z-index: 10;
     width: 1280px;
     height: 80%;
     background-color: $back-color;
@@ -21,11 +22,18 @@ $right-side: #242424;
     font-family: "Poppins", sans-serif;
 }
 
-.fon {
+.back {
+    position: relative;
+    background: rgba(4, 180, 224, 255);
+    z-index: 1;
+    height: 97vh;
+}
+
+.back-image {
     position: absolute;
     width: auto;
-    height: auto;
     background-image: url("./images/main_background.png");
+    height: auto;
     top: -28px;
     left: -28px;
     right: -28px;
@@ -34,7 +42,7 @@ $right-side: #242424;
     background-size: cover;
     background-repeat: no-repeat;
     z-index: -1;
-    background-color: #242424;
+    // background: rgba(4, 180, 224, 255);
 }
 // .bg {
 //     position: absolute;
@@ -48,5 +56,5 @@ $right-side: #242424;
 //     background-size: cover;
 //     background-repeat: no-repeat;
 //     z-index: -1;
-//     
+//     background: rgba(4, 180, 224, 255);
 // }

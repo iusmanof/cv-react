@@ -1,0 +1,27 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
+    &__title {
+        font-weight: 700;
+        font-size: 4rem;
+        margin: 0;
+        padding: 20px;
+    }
+
+    &__subtitle {
+        font-weight: 200;
+        font-size: 1.5rem;
+        margin: 0;
+        padding: 20px;
+    }
+
+    &__stack,
+    &__stack span {
+        padding: 5px;
+        font-style: italic;
+    }
+}
