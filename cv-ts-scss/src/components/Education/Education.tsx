@@ -15,7 +15,8 @@ interface IProps {}
  **/
 
 const Education: FC<IProps> = () => {
-    const props = useSpring({ from: { opacity: 0, marginTop: -2500 }, to:{ opacity: 1, marginTop: 0 }, config: { delay: 2000, duration: 2000} })
+    // const props = useSpring({ from: { opacity: 0, marginLeft: -2500 }, to:{ opacity: 1, marginLeft: 0 }, config: { delay: 2000, duration: 2000} })
+    const props = useSpring({ from: { opacity: 0, marginRight: -2500 }, to:{ opacity: 1, marginRight: 0 }, config: { delay: 2000, duration: 2000} })
 
     return (
           <animated.div style={props}>

@@ -39,7 +39,7 @@ const Contacts: FC<IProps> = () => {
                     <ul>
                         <li>
                             <img src={geolocation} alt="geolocation" />
-                            <h3>Minsk</h3>
+                            <a href="https://yandex.by/maps/-/CCUBQWtk~B">Minsk</a>
                         </li>
                         <li>
                             <img src={phone} alt="phone" />
@@ -47,19 +47,19 @@ const Contacts: FC<IProps> = () => {
                         </li>
                         <li>
                             <img src={email} alt="email" />
-                            <h3>iusmanof@gmail.com</h3>
+                            <a href="mailto: iusmanof@gmail.com">iusmanof@gmail.com</a>
                         </li>
                         <li>
                             <img src={linkedin} alt="linkedin" />
-                            <h1>Ihar Usmanau</h1>
+                            <a href="https://www.linkedin.com/in/iharusmanau" target="_blank">Ihar Usmanau</a>
                         </li>
                         <li>
                             <img src={facebook} alt="facebook" />
-                            <h1>Ihar Usmanau</h1>
+                            <a href="https://www.facebook.com/iharusmanau" target="_blank">Ihar Usmanau</a>
                         </li>
                         <li>
                             <img src={vk} alt="vk" />
-                            <h1>Ihar Usmanau</h1>
+                            <a href="https://vk.com/iharusmanau" target="_blank">Ihar Usmanau</a>
                         </li>
                     </ul>
                     <div className="contacts__map">

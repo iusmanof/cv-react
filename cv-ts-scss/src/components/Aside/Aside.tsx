@@ -24,17 +24,17 @@ function Aside() {
                         <h3 className="aside__position">React Developer</h3>
                         <ul className="aside__social-networks">
                             <li className="aside__item">
-                                <a href="" className="aside__link link-vk">
+                                <a href="https://vk.com/iharusmanau" target="_blank" className="aside__link link-vk">
                                     <img src={vk} alt="vk" />
                                 </a>
                             </li>
                             <li className="aside__item">
-                                <a href="" className="aside__link link-facebook">
+                                <a href="https://www.facebook.com/iharusmanau" target="_blank" className="aside__link link-facebook">
                                     <img src={facebook} alt="facebook" />
                                 </a>
                             </li>
                             <li className="aside__item">
-                                <a href="" className="aside__link link-linkedin">
+                                <a href="https://www.linkedin.com/in/iharusmanau"  target="_blank" className="aside__link link-linkedin">
                                     <img src={linkedin} alt="linkedin" />
                                 </a>
                             </li>
