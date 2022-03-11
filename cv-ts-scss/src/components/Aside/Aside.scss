@@ -5,52 +5,66 @@
 }
 
 .aside {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-areas: 
+    " . . ."
+    " . photo . "
+    " . name-surname ."
+    " . position . "
+    " . links . "
+    " . button ."
+    " . . ."
+    " . copyright . ";
+    grid-template-columns:  auto 300px auto;
+    grid-template-rows: 10vh 220px 40px 42px 70px 40px auto 20px;
+    justify-items: center;
     align-items: center;
-    justify-content: space-between;
     width: 550px;
-    height: 780px;
-    margin-top: 70px;
+    height: 80vh;
 
     &__photo {
+        grid-area: photo;
         border: 3px solid white;
         border-radius: 50%;
     }
 
     &__header {
-        margin: 0;
-        margin-top: 65px;
+        grid-area: name-surname;
+        // margin-top: 65px;
         font-weight: 500;
         font-size: 2rem;
     }
 
     &__position {
-        margin: 0 0 40px 0;
+        grid-area: position;
+        // margin: 0 0 40px 0;
         font-weight: 200;
         font-size: 1rem;
     }
 
     &__social-networks {
+        grid-area: links;
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
         width: 40%;
-        padding: 0;
-        margin-bottom: 30px;
+        // margin-bottom: 30px;
     }
 
     &__footer {
+        grid-area: copyright;
+
         font-weight: 200;
         font-size: 0.9rem;
     }
 }
 
 .button {
+    grid-area: button;
+    width: 100px;
     border: 1px solid white;
     border-radius: 60px;
     padding: 10px 30px;
-    margin-bottom: 220px;
 }
 
 .button:hover {

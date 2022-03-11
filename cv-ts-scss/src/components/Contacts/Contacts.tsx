@@ -51,15 +51,21 @@ const Contacts: FC<IProps> = () => {
                         </li>
                         <li>
                             <img src={linkedin} alt="linkedin" />
-                            <a href="https://www.linkedin.com/in/iharusmanau" target="_blank">Ihar Usmanau</a>
+                            <a href="https://www.linkedin.com/in/iharusmanau" target="_blank">
+                                Ihar Usmanau
+                            </a>
                         </li>
                         <li>
                             <img src={facebook} alt="facebook" />
-                            <a href="https://www.facebook.com/iharusmanau" target="_blank">Ihar Usmanau</a>
+                            <a href="https://www.facebook.com/iharusmanau" target="_blank">
+                                Ihar Usmanau
+                            </a>
                         </li>
                         <li>
                             <img src={vk} alt="vk" />
-                            <a href="https://vk.com/iharusmanau" target="_blank">Ihar Usmanau</a>
+                            <a href="https://vk.com/iharusmanau" target="_blank">
+                                Ihar Usmanau
+                            </a>
                         </li>
                     </ul>
                     <div className="contacts__map">

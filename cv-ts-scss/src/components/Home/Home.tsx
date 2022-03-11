@@ -2,9 +2,7 @@ import React from "react";
 import "./Home.scss";
 
 const Home = () => (
-
-
-               <div className="home"> 
+    <div className="home">
         <h1 className="home__title">Ihar Usmanau</h1>
         <h2 className="home__subtitle">Frontend/React Developer</h2>
         <div className="home__stack">
@@ -33,11 +31,7 @@ const Home = () => (
             <span>prettier</span>
         </div>
         <button>btn</button>
-
     </div>
- 
-
-    );
-   
+);
 
 export default Home;
