@@ -5,10 +5,9 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    margin: 0px 60px;
+    padding: $block-padding;
     &__header {
-        font-size: 2rem;
-        line-height: 3.5em;
+       @extend %h2-title;
     }
 
     &__category {
@@ -17,14 +16,17 @@
             justify-content: flex-start;
         }
         li {
+            @extend %h4-title;
             padding-right: 12px;
             color: $category-inactive;
         }
         li:first-child {
             color: $category-active;
+            font-weight: bold;
         }
         li:hover {
             cursor: pointer;
+            font-weight: bold;
             color: $category-hover;
         }
     }
@@ -32,17 +34,12 @@
     &__projects {
         display: flex;
         flex-wrap: wrap;
-        margin-top: 50px;
         justify-content: flex-start;
-        width: 100%;
         li {
             display: flex;
             flex-direction: column;
-            margin: 20px;
-            h3 {
-                margin-top: 15px;
-                font-size: 1.2rem;
-                font-weight: 400;
+            h4 {
+               @extend %h4-title;
             }
         }
     }
@@ -51,7 +48,7 @@
         position: relative;
         overflow: hidden;
         img {
-            width: 300px;
+            width: $portfolio-image-width;
         }
         img:hover {
             transition: all 0.3s ease-in-out;

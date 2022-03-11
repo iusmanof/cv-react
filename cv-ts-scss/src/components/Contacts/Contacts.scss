@@ -5,11 +5,9 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    padding: 20px;
+    padding-left: $block-padding;
     &__header {
-        font-size: 2rem;
-        font-weight: 600;
-        padding: 20px 0;
+        @extend %h2-title;
     }
 
     &__content {
@@ -18,7 +16,7 @@
 
     &__content ul li {
         font-weight: 500;
-        width: 230px;
+        width: $contact-card-width;
         height: 100px;
         display: flex;
         flex-direction: column;
@@ -38,4 +36,10 @@
     &__map {
         padding: 20px;
     }
+
+    &__yandex-map{
+        width: $yandex-map-width;
+        height: $yandex-map-height;
+    }
 }
+

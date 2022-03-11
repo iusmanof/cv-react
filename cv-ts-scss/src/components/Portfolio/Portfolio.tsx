@@ -29,48 +29,9 @@ const Portfolio: FC<IProps> = (props) => {
                         <img src={cv} alt="cv" />
                         <span>CV on image</span>
                     </div>
-                    <h3>Title CV</h3>
+                    <h4>Title CV</h4>
                 </li>
 
-                <li>
-                    <div className="portfolio__project">
-                        <img src={cv} alt="cv" />
-                        <span>CV on image</span>
-                    </div>
-                    <h3>Title CV</h3>
-                </li>
-
-                <li>
-                    <div className="portfolio__project">
-                        <img src={cv} alt="cv" />
-                        <span>CV on image</span>
-                    </div>
-                    <h3>Title CV</h3>
-                </li>
-
-                <li>
-                    <div className="portfolio__project">
-                        <img src={cv} alt="cv" />
-                        <span>CV on image</span>
-                    </div>
-                    <h3>Title CV</h3>
-                </li>
-
-                <li>
-                    <div className="portfolio__project">
-                        <img src={cv} alt="cv" />
-                        <span>CV on image</span>
-                    </div>
-                    <h3>Title CV</h3>
-                </li>
-
-                <li>
-                    <div className="portfolio__project">
-                        <img src={cv} alt="cv" />
-                        <span>CV on image</span>
-                    </div>
-                    <h3>Title CV</h3>
-                </li>
             </ul>
         </div>
     );

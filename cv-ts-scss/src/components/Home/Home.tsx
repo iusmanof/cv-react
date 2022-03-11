@@ -5,7 +5,8 @@ const Home = () => (
     <div className="home">
         <h1 className="home__title">Ihar Usmanau</h1>
         <h2 className="home__subtitle">Frontend/React Developer</h2>
-        <div className="home__stack">
+        <div className="home__stacks">
+ <div className="home__stack">
             <span>html</span>
             <span>css</span>
             <span>js</span>
@@ -30,7 +31,7 @@ const Home = () => (
             <span>eslint</span>
             <span>prettier</span>
         </div>
-        <button>btn</button>
+        </div>
     </div>
 );
 

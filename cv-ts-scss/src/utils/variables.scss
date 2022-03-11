@@ -1,4 +1,7 @@
-// colors
+//// colors
+$back-color: #6a6565;
+$right-side: #242424;
+$color-white: white;
 $main-dark-color: #242424;
 $main-grey-color: #444444;
 $mini-window-grey-color: #333333;
@@ -7,3 +10,87 @@ $category-active: #cecece;
 $category-hover: #b6b6b6;
 $category-inactive: #6b6b6b;
 $border-btn-color: #04b4e0;
+$scroll-color: #525353;
+$certificate-true-color: #50f850;
+$certificate-false-color: #ecfd02;
+$content-color: #d5d5d5;
+
+//// size px
+$wrapper-height: 100vh;
+$wrapper-width: 100vw;
+$content-height: $wrapper-height - 20vh;
+$content-widtht: $wrapper-width - 34.5vw;
+$content-border-radius: 35px;
+$aside-width: $content-widtht - 44vw;
+$aside-height: $content-height;
+$aside-width-grid: $aside-width - 10vw;
+$aside-icons-width-grid: $aside-width-grid * 0.5;
+$button-aside-width: 12em;
+$scroll-height: $content-height - 10vh;
+$home-height: $content-height - 10vh;
+$certificate-image-width: $content-widtht * 0.3;
+$certificate-image-padding: $certificate-image-width * 0.01;
+$portfolio-image-width: $content-widtht * 0.25;
+$block-padding: 20px;
+$contact-card-width: $content-widtht * 0.2;
+$contact-card-height: $content-height * 0.2;
+$yandex-map-width: $content-widtht * 0.3; 
+$yandex-map-height: $content-height * 0.5;
+
+//// fonts
+%h1-title {
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 1.5em;
+}
+%h2-title {
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 2.5em;
+}
+%h3-title {
+    font-weight: 200;
+    font-size: 1.5rem;
+    line-height: 1.5em;
+}
+%h4-title {
+    font-weight: 200;
+    font-size: 1.1rem;
+    line-height: 3em;
+}
+%btn-font {
+    font-weight: 100;
+    font-size: 0.7rem;
+    line-height: 2.4em;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 2em;
+}
+%content {
+font-size: 15px;
+font-family: poppins,Helvetica,sans-serif;
+line-height: 1.3em;
+color: $content-color;
+}
+%copyright {
+    font-weight: 100;
+    font-size: 0.65rem;
+    line-height: 3em;
+}
+
+//// icons
+%icons-props {
+    background-repeat: no-repeat;
+    display: block;
+    height: 14px;
+}
+
+//// scroll
+%scroll-content-moz{
+    width: 6px;
+    border-radius: $content-border-radius;
+}
+%scroll-content-webkit{
+    width: 6px;
+    border-radius: $content-border-radius;
+}

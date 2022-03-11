@@ -20,7 +20,7 @@ function Aside() {
     return (
         <animated.div style={props}>
             <aside className="aside">
-                <img className="aside__photo" src={ava} alt="IMG" />
+                {/* <img className="aside__photo" src={ava} alt="IMG" /> */}
                 <h2 className="aside__header">Ihar Usmanau</h2>
                 <h3 className="aside__position">React Developer</h3>
                 <ul className="aside__social-networks">

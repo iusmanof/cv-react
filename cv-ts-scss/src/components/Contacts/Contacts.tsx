@@ -19,8 +19,8 @@ const coordinates = [
     [56.902531, 30.561481]
 ];
 
-const widthMap = "520px";
-const heightMap = "140px";
+const widthMap = "21em";
+const heightMap = "20em";
 
 interface IProps {}
 
@@ -70,7 +70,9 @@ const Contacts: FC<IProps> = () => {
                     </ul>
                     <div className="contacts__map">
                         <YMaps>
-                            <Map defaultState={mapData} width={widthMap} height={heightMap}>
+                            <Map defaultState={mapData} className="contacts__yandex-map"
+                            //  width={widthMap} height={heightMap}
+                             >
                                 {coordinates.map((coordinate) => (
                                     <Placemark geometry={coordinate} />
                                 ))}

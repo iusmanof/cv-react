@@ -1,22 +1,21 @@
+@import "../../utils/variables.scss";
+
 .home {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100%;
-
+    height: $home-height;
     &__title {
-        font-weight: 700;
-        font-size: 4rem;
-        margin: 0;
-        padding: 20px;
+        @extend %h1-title;
     }
-
     &__subtitle {
-        font-weight: 200;
-        font-size: 1.5rem;
-        margin: 0;
-        padding: 20px;
+        @extend %h3-title;
+    }
+    
+    &__stacks{
+        margin-top: 3rem;
+        text-align: center;
     }
 
     &__stack,

@@ -5,23 +5,15 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    padding: 20px;
+    padding: $block-padding;
 
     &__header {
-        font-size: 2rem;
-        padding: 20px 0;
+        @extend %h2-title;
     }
 
     &__content {
-        line-height: 2em;
+        @extend %content;
         text-align: justify;
-        text-indent: 3%;
-        font-size: 14px;
-        ul li:before {
-            text-indent: 4px;
-            position: absolute;
-            margin-left: -1.1em;
-        }
     }
 
     &__certificates {
@@ -47,29 +39,28 @@
 }
 
 .certificate-true {
-    color: rgb(80, 248, 80);
+    color: $certificate-true-color;
 }
 
 .certificate-false {
-    color: rgb(236, 253, 2);
+    color: $certificate-false-color;
 }
 
 .cert-img {
-    padding: 20px;
-    width: 300px;
+    padding: $certificate-image-padding;
+    width: $certificate-image-width;
 }
 
 .button__download {
-    font-size: 0.8rem;
+    @extend %btn-font;
     background-color: $main-dark-color;
-    border: 3px solid $border-btn-color;
-    border-radius: 2em;
-    line-height: 2.5;
-    margin: 0.25em;
+    border: 2px solid $border-btn-color;
+    margin-top: 1em;
     padding: 0.2em 1em;
     text-transform: uppercase;
 }
 
 .button__download:hover {
     cursor: pointer;
+    color: $border-btn-color;
 }

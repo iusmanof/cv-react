@@ -2,39 +2,36 @@
 
 .main {
     background-color: $main-dark-color;
-    border-radius: 35px;
-    width: 1300px;
-    height: 100%;
+    border-radius: $content-border-radius;
+    width: $content-widtht;
+    height: $content-height;
 }
 
 .scroll-content {
-    height: 90%;
+    height: $scroll-height;
     overflow-y: scroll;
     scroll-behavior: smooth;
     margin-right: 15px;
     margin-top: 25px;
 
     scrollbar-width: thin;
-    scrollbar-color: #525353 $main-dark-color;
+    scrollbar-color: $scroll-color $main-dark-color;
 }
 
-/* width */
 .scroll-content::-moz-scrollbar {
-    width: 6px;
-    border-radius: 50px;
+@extend  %scroll-content-moz;
 }
 
 .scroll-content::-webkit-scrollbar {
-    width: 6px;
-    border-radius: 50px;
+@extend  %scroll-content-webkit;
 }
 
 .scroll-content::-webkit-scrollbar-thumb {
-    background: #525353;
-    border-radius: 50px;
+    background: $scroll-color;
+    border-radius: $content-border-radius;
 }
 
 .scroll-content::-webkit-scrollbar-thumb:hover {
     cursor: pointer;
-    background: #555;
+    background: $scroll-color;
 }
