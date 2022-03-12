@@ -11,7 +11,7 @@ interface IProps {}
 const About: FC<IProps> = () => {
     return (
         <div className="about">
-            <h2 className="about__header">About me</h2>
+            <h2 className="about__header category__header">About me</h2>
             <p className="about__content">
                 <p>
                     My name is Igor Usmanov I’m from Belarus. I grew up and live in Minsk I’m 30
@@ -27,7 +27,7 @@ const About: FC<IProps> = () => {
                     through documentation.
                 </p>
             </p>
-            <h2 className="about__header">Skills</h2>
+            <h2 className="about__header category__header">Skills</h2>
             <p className="about__skills">
                 <ul>
                     <li>

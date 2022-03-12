@@ -34,7 +34,7 @@ const Contacts: FC<IProps> = () => {
         <div>
             {" "}
             <div className="contacts">
-                <h2 className="contacts__header">Contacts</h2>
+                <h2 className="contacts__header  category__header">Contacts</h2>
                 <p className="contacts__content">
                     <ul>
                         <li>

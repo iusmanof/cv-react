@@ -20,7 +20,9 @@ function Aside() {
     return (
         <animated.div style={props}>
             <aside className="aside">
-                {/* <img className="aside__photo" src={ava} alt="IMG" /> */}
+                <div className="aside__photo-wrapper">
+                    <img className="aside__photo" src={ava} alt="IMG" />
+                </div>
                 <h2 className="aside__header">Ihar Usmanau</h2>
                 <h3 className="aside__position">React Developer</h3>
                 <ul className="aside__social-networks">
@@ -58,7 +60,7 @@ function Aside() {
                     </a>
                 </div>
                 <div className="aside__footer">
-                    <a href="https://lmpixels.com/demo/breezycv/dark/1/index.html">
+                    <a href="https://lmpixels.com/demo/breezycv/dark/1/index.html" target="_blank">
                         &copy; 2021 All Right Reserved
                     </a>
                 </div>

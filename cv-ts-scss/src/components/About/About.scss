@@ -8,11 +8,13 @@
     padding: $block-padding;
     &__header {
         position: relative;
-        z-index: 1;
         box-sizing: inherit;
         visibility: visible;
         @extend %h2-title;
     }
+    // &__header::after {
+    //     @extend %points;
+    // }
     &__content p {
         text-align: justify;
         text-indent: 3%;

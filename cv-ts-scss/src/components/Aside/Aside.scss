@@ -17,8 +17,15 @@
     align-items: center;
     width: $aside-width;
     height: $content-height;
-    &__photo {
+    &__photo-wrapper {
+        position: relative;
         grid-area: photo;
+        margin-bottom: 4em;
+    }
+    &__photo-wrapper::after {
+        @extend %-points-aside-img;
+    }
+    &__photo {
         border: 1px solid $color-white;
         border-radius: 50%;
     }

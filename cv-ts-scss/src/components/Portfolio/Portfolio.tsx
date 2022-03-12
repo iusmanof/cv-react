@@ -13,7 +13,7 @@ interface IProps {}
 const Portfolio: FC<IProps> = (props) => {
     return (
         <div className="portfolio">
-            <h2 className="portfolio__header">Portfolio</h2>
+            <h2 className="portfolio__header category__header">Portfolio</h2>
 
             <nav className="portfolio__category">
                 <ul>
