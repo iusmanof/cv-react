@@ -17,8 +17,8 @@ interface IProps {}
 const Education: FC<IProps> = () => {
     // const props = useSpring({ from: { opacity: 0, marginLeft: -2500 }, to:{ opacity: 1, marginLeft: 0 }, config: { delay: 2000, duration: 2000} })
     const props = useSpring({
-        from: { opacity: 0, transform: "translate3d(0,100%,0)" },
-        to:{ opacity: 1, transform: "translate3d(0%,0,0)" },
+        from: {opacity: 0, transform: "translate3d(0,100%,0)"},
+        to: {opacity: 1, transform: "translate3d(0%,0,0)"}
         // config: {delay: 2000, duration: 200}
     });
 

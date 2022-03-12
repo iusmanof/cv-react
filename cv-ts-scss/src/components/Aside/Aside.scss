@@ -17,25 +17,20 @@
     align-items: center;
     width: $aside-width;
     height: $content-height;
-
     &__photo {
         grid-area: photo;
         border: 1px solid $color-white;
         border-radius: 50%;
     }
-
     &__header {
         grid-area: name-surname;
-         @extend %h2-title;
- line-height: 1em;
-         
+        @extend %h2-title;
+        line-height: 1em;
     }
-
     &__position {
         grid-area: position;
         @extend %h4-title;
     }
-
     &__social-networks {
         grid-area: links;
         display: flex;
@@ -43,7 +38,6 @@
         justify-content: space-evenly;
         width: $aside-icons-width-grid;
     }
-
     &__footer {
         grid-area: copyright;
         @extend %copyright;
@@ -52,9 +46,9 @@
 
 .button {
     grid-area: button;
-    @extend %btn-font;
     border: 1px solid $color-white;
     width: $button-aside-width;
+    @extend %btn-font;
 }
 
 .button:hover {

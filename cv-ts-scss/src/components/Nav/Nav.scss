@@ -1,15 +1,12 @@
 @import "../../utils/variables.scss";
 
-$nav-color: #6a6565;
-
 .navigation {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-    margin-left: 20px;
     height: 80%;
-
+    margin-left: 20px;
     &__list {
         display: flex;
         flex-direction: column;
@@ -17,18 +14,14 @@ $nav-color: #6a6565;
         align-items: center;
         height: 310px;
         margin: 0;
-        padding-left: 0;
-        background-color: $nav-color;
-        border-radius: 50px;
         padding: 10px;
+        border-radius: 50px;
+        background-color: $nav-color;
     }
-
     &__item {
-        list-style-type: none;
-        margin: 0px 0px;
         padding: 5px 0;
+        list-style-type: none;
     }
-
     &__link {
         font-size: 2rem;
         color: white;
@@ -37,15 +30,14 @@ $nav-color: #6a6565;
                 contrast(97%);
         }
     }
-
     &__arrows {
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
-        background-color: $nav-color;
-        border-radius: 50px;
-        padding: 10px;
         height: 100px;
+        padding: 10px;
+        border-radius: 50px;
+        background-color: $nav-color;
     }
 }

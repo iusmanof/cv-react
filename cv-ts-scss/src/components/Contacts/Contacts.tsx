@@ -70,9 +70,11 @@ const Contacts: FC<IProps> = () => {
                     </ul>
                     <div className="contacts__map">
                         <YMaps>
-                            <Map defaultState={mapData} className="contacts__yandex-map"
-                            //  width={widthMap} height={heightMap}
-                             >
+                            <Map
+                                defaultState={mapData}
+                                className="contacts__yandex-map"
+                                //  width={widthMap} height={heightMap}
+                            >
                                 {coordinates.map((coordinate) => (
                                     <Placemark geometry={coordinate} />
                                 ))}

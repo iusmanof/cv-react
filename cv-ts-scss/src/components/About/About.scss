@@ -7,21 +7,20 @@
     align-items: flex-start;
     padding: $block-padding;
     &__header {
-        @extend %h2-title;
         position: relative;
         z-index: 1;
         box-sizing: inherit;
         visibility: visible;
+        @extend %h2-title;
     }
     &__content p {
-        @extend %content;
         text-align: justify;
         text-indent: 3%;
+        @extend %content;
     }
     &__skills ul li {
-         @extend %content;
+        @extend %content;
     }
-
     &__skills ul li b {
         font-weight: 700;
     }

@@ -6,22 +6,18 @@
     justify-content: flex-start;
     align-items: flex-start;
     padding: $block-padding;
-
     &__header {
         @extend %h2-title;
     }
-
     &__content {
         @extend %content;
         text-align: justify;
     }
-
     &__certificates {
         display: flex;
         flex-direction: column;
-        width: 100%;
         align-items: center;
-
+        width: 100%;
         li {
             display: flex;
             flex-direction: column;
@@ -41,7 +37,6 @@
 .certificate-true {
     color: $certificate-true-color;
 }
-
 .certificate-false {
     color: $certificate-false-color;
 }
@@ -52,12 +47,12 @@
 }
 
 .button__download {
-    @extend %btn-font;
-    background-color: $main-dark-color;
-    border: 2px solid $border-btn-color;
     margin-top: 1em;
     padding: 0.2em 1em;
+    border: 2px solid $border-btn-color;
     text-transform: uppercase;
+    @extend %btn-font;
+    background-color: $main-dark-color;
 }
 
 .button__download:hover {

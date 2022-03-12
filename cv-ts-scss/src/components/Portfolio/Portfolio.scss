@@ -7,22 +7,21 @@
     align-items: flex-start;
     padding: $block-padding;
     &__header {
-       @extend %h2-title;
+        @extend %h2-title;
     }
-
     &__category {
         ul {
             display: flex;
             justify-content: flex-start;
         }
         li {
-            @extend %h4-title;
             padding-right: 12px;
+            @extend %h4-title;
             color: $category-inactive;
         }
         li:first-child {
-            color: $category-active;
             font-weight: bold;
+            color: $category-active;
         }
         li:hover {
             cursor: pointer;
@@ -30,7 +29,6 @@
             color: $category-hover;
         }
     }
-
     &__projects {
         display: flex;
         flex-wrap: wrap;
@@ -39,11 +37,10 @@
             display: flex;
             flex-direction: column;
             h4 {
-               @extend %h4-title;
+                @extend %h4-title;
             }
         }
     }
-
     &__project {
         position: relative;
         overflow: hidden;
@@ -55,12 +52,12 @@
             transform: scale(1.5);
         }
         span {
-            visibility: hidden;
             position: absolute;
-            background-color: $main-dark-color;
-            padding: 5px 10px;
             top: 10px;
             left: 10px;
+            visibility: hidden;
+            padding: 5px 10px;
+            background-color: $main-dark-color;
         }
     }
     &__project:hover {

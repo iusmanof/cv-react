@@ -9,37 +9,31 @@
     &__header {
         @extend %h2-title;
     }
-
     &__content {
         display: flex;
     }
-
     &__content ul li {
-        font-weight: 500;
-        width: $contact-card-width;
-        height: 100px;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
+        width: $contact-card-width;
+        height: 100px;
         margin: 20px;
-        background-color: $mini-window-grey-color;
         border: 1px solid $mini-window-border-grey-color;
-
+        background-color: $mini-window-grey-color;
+        font-weight: 500;
         img {
             width: 40px;
             filter: invert(54%) sepia(58%) saturate(3084%) hue-rotate(156deg) brightness(100%)
                 contrast(97%);
         }
     }
-
     &__map {
         padding: 20px;
     }
-
-    &__yandex-map{
+    &__yandex-map {
         width: $yandex-map-width;
         height: $yandex-map-height;
     }
 }
-

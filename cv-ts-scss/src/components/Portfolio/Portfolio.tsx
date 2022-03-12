@@ -31,7 +31,6 @@ const Portfolio: FC<IProps> = (props) => {
                     </div>
                     <h4>Title CV</h4>
                 </li>
-
             </ul>
         </div>
     );

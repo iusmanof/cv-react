@@ -1,34 +1,33 @@
 @import "../../utils/variables.scss";
 
 .main {
-    background-color: $main-dark-color;
-    border-radius: $content-border-radius;
     width: $content-widtht;
     height: $content-height;
+    border-radius: $content-border-radius;
+    background-color: $main-dark-color;
 }
 
 .scroll-content {
     height: $scroll-height;
-    overflow-y: scroll;
-    scroll-behavior: smooth;
     margin-right: 15px;
     margin-top: 25px;
-
+    overflow-y: scroll;
+    scroll-behavior: smooth;
     scrollbar-width: thin;
     scrollbar-color: $scroll-color $main-dark-color;
 }
 
 .scroll-content::-moz-scrollbar {
-@extend  %scroll-content-moz;
+    @extend %scroll-content-moz;
 }
 
 .scroll-content::-webkit-scrollbar {
-@extend  %scroll-content-webkit;
+    @extend %scroll-content-webkit;
 }
 
 .scroll-content::-webkit-scrollbar-thumb {
-    background: $scroll-color;
     border-radius: $content-border-radius;
+    background: $scroll-color;
 }
 
 .scroll-content::-webkit-scrollbar-thumb:hover {
