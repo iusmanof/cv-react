@@ -11,7 +11,13 @@
     }
     &__content {
         @extend %content;
-        text-align: justify;
+
+        tbody tr {
+            height: $tbody-tr-height;
+            td:first-child {
+                width: $tbody-td-width;
+            }
+        }
     }
     &__certificates {
         display: flex;
@@ -36,9 +42,11 @@
 
 .certificate-true {
     color: $certificate-true-color;
+    @extend %certificate-label-font;
 }
 .certificate-false {
     color: $certificate-false-color;
+    @extend %certificate-label-font;
 }
 
 .cert-img {

@@ -38,6 +38,8 @@ $contact-card-height: $content-height * 0.2;
 $yandex-map-width: $content-widtht * 0.3;
 $yandex-map-height: $content-height * 0.5;
 $aside-1-row: 10vh;
+$tbody-tr-height: $content-height * 0.07;
+$tbody-td-width: $content-widtht * 0.2;
 //// fonts
 %h1-title {
     font-weight: 700;
@@ -77,6 +79,11 @@ $aside-1-row: 10vh;
     font-weight: 100;
     font-size: 0.65rem;
     line-height: 3em;
+}
+%certificate-label-font {
+    font-weight: 100;
+    font-size: 0.7rem;
+    font-style: italic;
 }
 
 //// icons

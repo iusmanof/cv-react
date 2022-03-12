@@ -17,7 +17,7 @@ function Nav() {
         <nav className="navigation">
             <ul className="navigation__list">
                 <li className="navigation__item" id="homeToggler">
-                    <a className="navigation__link navigation__link-home" href="#home">
+                    <a className="navigation_link navigation__link-home" href="#home">
                         <Link to="/">
                             <img src={home} alt="home" />
                         </Link>
@@ -54,11 +54,10 @@ function Nav() {
             </ul>
 
             <div className="navigation__arrows">
-                <div className="arrow-right">
-                    {" "}
+                <div className="navigation_link arrow-right">
                     <img src={right} alt="right" />
                 </div>
-                <div className="arrow-left">
+                <div className="navigation_link arrow-left">
                     <img src={left} alt="left" />
                 </div>
             </div>

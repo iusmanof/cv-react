@@ -26,8 +26,47 @@ const Education: FC<IProps> = () => {
         <animated.div style={props}>
             <div className="education">
                 <h2 className="education__header  category__header">Education</h2>
-                <p className="education__content">
-                    <ul>
+                <div className="education__content">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    2009 - 2014
+                                    <div className="certificate-true">[certificated]</div>
+                                </td>
+                                <td>
+                                    Higher education: Belarusian State University of Informatics and
+                                    Radioelectronics - Telecommunications Enginee
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    2014 - 2017
+                                    <div className="certificate-true">[certificated]</div>
+                                </td>
+                                <td>Course: IT Step - Programming Engineer</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    2021 <div className="certificate-true">[certificated]</div>
+                                </td>
+                                <td>Course: EPAM RS School - JS/Front-end 2021Q1 </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    2021 <div className="certificate-false">[completed]</div>
+                                </td>
+                                <td>Course: EPAM RS School - React 2021Q3</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    2021 <div className="certificate-true">[certificated]</div>
+                                </td>
+                                <td>Course: EPAM RS School - NodeJS 2021Q4</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    {/* <ul>
                         <li>
                             Higher education: Belarusian State University of Informatics and
                             Radioelectronics - Telecommunications Engineer 2009 - 2014
@@ -48,8 +87,8 @@ const Education: FC<IProps> = () => {
                             Course: EPAM RS School - NodeJS 2021Q4{" "}
                             <span className="certificate-true">[certificate] </span>
                         </li>
-                    </ul>
-                </p>
+                    </ul> */}
+                </div>
 
                 <h2 className="education__header  category__header">Certificates</h2>
                 <ul className="education__certificates">

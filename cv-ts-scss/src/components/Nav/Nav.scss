@@ -18,6 +18,10 @@
         border-radius: 50px;
         background-color: $nav-color;
     }
+    &_link:hover {
+        filter: invert(54%) sepia(58%) saturate(3084%) hue-rotate(156deg) brightness(100%)
+            contrast(97%);
+    }
     &__item {
         padding: 5px 0;
         list-style-type: none;
@@ -25,11 +29,8 @@
     &__link {
         font-size: 2rem;
         color: white;
-        &-home:hover {
-            filter: invert(54%) sepia(58%) saturate(3084%) hue-rotate(156deg) brightness(100%)
-                contrast(97%);
-        }
     }
+
     &__arrows {
         display: flex;
         flex-direction: column;
