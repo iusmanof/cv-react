@@ -66,28 +66,6 @@ const Education: FC<IProps> = () => {
                             </tr>
                         </tbody>
                     </table>
-                    {/* <ul>
-                        <li>
-                            Higher education: Belarusian State University of Informatics and
-                            Radioelectronics - Telecommunications Engineer 2009 - 2014
-                        </li>
-                        <li>
-                            Course: IT Step - Programming Engineer 2014 - 2017{" "}
-                            <span className="certificate-true">[certificate]</span>
-                        </li>
-                        <li>
-                            Course: EPAM RS School - JS/Front-end 2021Q1{" "}
-                            <span className="certificate-true">[certificate] </span>
-                        </li>
-                        <li>
-                            Course: EPAM RS School - React 2021Q3{" "}
-                            <span className="certificate-false">[completed] </span>
-                        </li>
-                        <li>
-                            Course: EPAM RS School - NodeJS 2021Q4{" "}
-                            <span className="certificate-true">[certificate] </span>
-                        </li>
-                    </ul> */}
                 </div>
 
                 <h2 className="education__header  category__header">Certificates</h2>

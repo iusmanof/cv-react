@@ -7,6 +7,7 @@ declare module "*.sass" {
     export default css;
 }
 declare module "react-markup";
+declare module "react-typist";
 declare module "*.webp";
 declare module "*.png";
 declare module "*.jpg";

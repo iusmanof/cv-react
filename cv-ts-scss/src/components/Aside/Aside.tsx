@@ -14,7 +14,7 @@ function Aside() {
     const props = useSpring({
         from: {opacity: 0, marginTop: -2500},
         to: {opacity: 1, marginTop: 0},
-        config: {delay: 2000, duration: 2000}
+        config: {delay: 500, duration: 600}
     });
 
     return (
