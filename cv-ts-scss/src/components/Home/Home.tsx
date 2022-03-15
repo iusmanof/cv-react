@@ -47,6 +47,7 @@ const Home: FC<IProps> = () => {
                                 <span>eslint</span>
                                 <span>prettier</span>
                             </div>
+                            <Typist.Backspace count={100} delay={800} />
                         </Typist>
                     ) : (
                         ""

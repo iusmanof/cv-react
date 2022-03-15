@@ -24,7 +24,7 @@ $content-widtht: $wrapper-width - 34.5vw;
 $content-border-radius: 35px;
 $aside-width: $content-widtht - 44vw;
 $aside-height: $content-height;
-$aside-width-grid: $aside-width - 10vw;
+$aside-width-grid: $aside-width;
 $aside-icons-width-grid: $aside-width-grid * 0.5;
 $button-aside-width: 12em;
 $scroll-height: $content-height - 10vh;
@@ -42,18 +42,18 @@ $tbody-tr-height: $content-height * 0.07;
 $tbody-td-width: $content-widtht * 0.2;
 //// fonts
 %h1-title {
-    font-weight: 700;
-    font-size: 4rem;
+    font-weight: 900;
+    font-size: 6rem;
     line-height: 1.5em;
 }
 %h2-title {
     font-weight: 600;
-    font-size: 2rem;
+    font-size: 2.5rem;
     line-height: 2.5em;
 }
 %h3-title {
     font-weight: 200;
-    font-size: 1.5rem;
+    font-size: 2.1rem;
     line-height: 1.5em;
 }
 %h4-title {
@@ -62,8 +62,8 @@ $tbody-td-width: $content-widtht * 0.2;
     line-height: 3em;
 }
 %btn-font {
-    font-weight: 100;
-    font-size: 0.7rem;
+    font-weight: 400;
+    font-size: 1.1rem;
     line-height: 2.4em;
     text-transform: uppercase;
     text-align: center;
@@ -76,12 +76,12 @@ $tbody-td-width: $content-widtht * 0.2;
     color: $content-color;
 }
 %copyright {
-    font-weight: 100;
-    font-size: 0.65rem;
+    font-weight: 300;
+    font-size: 0.8rem;
     line-height: 3em;
 }
 %certificate-label-font {
-    font-weight: 100;
+    font-weight: 300;
     font-size: 0.7rem;
     font-style: italic;
 }

@@ -17,49 +17,52 @@ function Nav() {
         <nav className="navigation">
             <ul className="navigation__list">
                 <li className="navigation__item" id="homeToggler">
-                    <a className="navigation_link navigation__link-home" href="#home">
-                        <Link to="/">
-                            <img src={home} alt="home" />
+                   
+                        <Link to="/"  nav-tooltip="Home">
+                            <span className="icon icon-home"></span>
                         </Link>
-                    </a>
+                
                 </li>
                 <li className="navigation__item" id="aboutToggler">
-                    <a className="navigation_link navigation_link-about" href="#about-me">
-                        <Link to="/about">
-                            <img src={about} alt="home" />
+                    
+                        <Link to="/about" nav-tooltip="About">
+                            <span className="icon icon-about"></span>
                         </Link>
-                    </a>
+                   
                 </li>
                 <li className="navigation__item" id="educationToggle">
-                    <a className="navigation_link navigation_link-resume" href="#education">
-                        <Link to="/education">
-                            <img src={education} alt="education" />
+                   
+                        <Link to="/education" nav-tooltip="Education">
+                            <span className="icon icon-education"></span>
                         </Link>
-                    </a>
+                    
                 </li>
                 <li className="navigation__item" id="porfolioToggler">
-                    <a className="navigation_link navigation_link-portfolio" href="#porfolio">
+                    <a
+                        className="navigation_link navigation_link-portfolio"
+                        href="#porfolio"
+                        nav-tooltip="Portfolio"
+                    >
                         <Link to="/portfolio">
-                            <img src={portfolio} alt="portfolio" />
+                            <span className="icon icon-portfolio"></span>
                         </Link>
                     </a>
                 </li>
                 <li className="navigation__item" id="contactsToggler">
-                    <a className="navigation_link navigation_link-contacts" href="#contacts">
-                        <Link to="/contacts">
-                            <img src={contacts} alt="contacts" />
+                    
+                        <Link to="/contacts" nav-tooltip="Portfolio">
+                            <span className="icon icon-contacts"></span>
                         </Link>
-                    </a>
                 </li>
             </ul>
 
             <div className="navigation__arrows">
-                <div className="navigation_link arrow-right">
-                    <img src={right} alt="right" />
-                </div>
-                <div className="navigation_link arrow-left">
-                    <img src={left} alt="left" />
-                </div>
+                <Link to="/about"  nav-tooltip="next">
+                     <span className="icon icon-right"></span>
+                </Link>
+                <Link to="/about" nav-tooltip="prev">
+                     <span className="icon icon-left"></span>
+                </Link>
             </div>
         </nav>
     );

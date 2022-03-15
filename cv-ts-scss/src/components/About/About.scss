@@ -12,9 +12,6 @@
         visibility: visible;
         @extend %h2-title;
     }
-    // &__header::after {
-    //     @extend %points;
-    // }
     &__content p {
         text-align: justify;
         text-indent: 3%;
