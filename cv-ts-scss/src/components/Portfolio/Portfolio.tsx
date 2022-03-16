@@ -30,11 +30,9 @@ const Portfolio: FC<IProps> = () => {
                 </nav>
 
                 <ul className="portfolio__projects">
-                    <li>
-                        <div className="portfolio__project">
-                            <img src={cv} alt="cv" />
-                            <span>CV on image</span>
-                        </div>
+                    <li className="portfolio__project">
+                        <img src={cv} alt="cv" />
+                        <span>CV on image</span>
                         <h4>Title CV</h4>
                     </li>
                 </ul>

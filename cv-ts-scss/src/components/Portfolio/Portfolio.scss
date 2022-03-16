@@ -30,39 +30,30 @@
         }
     }
     &__projects {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        li {
-            display: flex;
-            flex-direction: column;
-            h4 {
-                @extend %h4-title;
-            }
-        }
+        @extend %ul-category;
     }
-    &__project {
-        position: relative;
-        overflow: hidden;
-        img {
-            width: $portfolio-image-width;
-        }
-        img:hover {
-            transition: all 0.3s ease-in-out;
-            transform: scale(1.5);
-        }
-        span {
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            visibility: hidden;
-            padding: 5px 10px;
-            background-color: $main-dark-color;
-        }
-    }
-    &__project:hover {
-        span {
-            visibility: visible;
-        }
-    }
+    // &__project {
+    //     position: relative;
+    //     overflow: hidden;
+    //     img {
+    //         width: $portfolio-image-width;
+    //     }
+    //     img:hover {
+    //         transition: all 0.3s ease-in-out;
+    //         transform: scale(1.5);
+    //     }
+    //     span {
+    //         position: absolute;
+    //         top: 10px;
+    //         left: 10px;
+    //         visibility: hidden;
+    //         padding: 5px 10px;
+    //         background-color: $main-dark-color;
+    //     }
+    // }
+    // &__project:hover {
+    //     span {
+    //         visibility: visible;
+    //     }
+    // }
 }

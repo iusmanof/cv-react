@@ -71,30 +71,21 @@ const Education: FC<IProps> = () => {
                 <h2 className="education__header  category__header">Certificates</h2>
                 <ul className="education__certificates">
                     <li>
-                        <img src={js_certificate} alt="js-certificate" className="cert-img" />
-                        <a className="button__download" href={js_pdf} download>
-                            download certificate
-                        </a>
+                        <img src={nodejs_certificate} alt="nodejs-certificate" />
+                        <span>...</span>
+                        <h4>CCNA</h4>
                     </li>
-                    <li>
-                        <img
-                            src={nodejs_certificate}
-                            alt="nodejs-certificate"
-                            className="cert-img"
-                        />
-                        <a className="button__download" href={nodejs_pdf} download>
-                            download certificate
-                        </a>
+
+                     <li>
+                        <img src={js_certificate} alt="nodejs-certificate" />
+                        <span>...</span>
+                        <h4>JS/Front-end certificate</h4>
                     </li>
-                    <li>
-                        <img
-                            src={nodejs_certificate}
-                            alt="nodejs-certificate"
-                            className="cert-img"
-                        />
-                        <a className="button__download" href={js_pdf} download>
-                            download certificate
-                        </a>
+
+                     <li>
+                        <img src={nodejs_certificate} alt="nodejs-certificate" />
+                        <span>...</span>
+                        <h4>Nodejs certificate</h4>
                     </li>
                 </ul>
             </div>

@@ -41,7 +41,7 @@
 [nav-tooltip] {
     position: relative;
     z-index: 10;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 [nav-tooltip]::after {
@@ -66,71 +66,75 @@
 }
 
 [nav-tooltip]:hover::after {
-    opacity: 1; 
-    left: -6em; 
+    opacity: 1;
+    left: -6em;
 }
 
 [nav-tooltip]:focus:after {
     columns: white;
 }
 
-
-
-
 .icon {
-  display: inline-block;
-  width: 55px;
-  height: 33px;
-  background-size: cover;
+    display: inline-block;
+    width: 55px;
+    height: 33px;
+    background-size: cover;
 }
 .icon-home {
-  background-image: url('../../images/navigation/home.svg');
+    background-image: url("../../images/navigation/home.svg");
 }
 .icon-about {
-  background-image: url('../../images/navigation/about.svg');
+    background-image: url("../../images/navigation/about.svg");
 }
 .icon-education {
-  background-image: url('../../images/navigation/education.svg');
+    background-image: url("../../images/navigation/education.svg");
 }
 .icon-portfolio {
-  background-image: url('../../images/navigation/portfolio.svg');
+    background-image: url("../../images/navigation/portfolio.svg");
 }
 .icon-contacts {
-  background-image: url('../../images/navigation/contacts.svg');
+    background-image: url("../../images/navigation/contacts.svg");
 }
 .icon-right {
-  background-image: url('../../images/navigation/right.svg');
+    background-image: url("../../images/navigation/right.svg");
 }
 .icon-left {
-  background-image: url('../../images/navigation/left.svg');
+    background-image: url("../../images/navigation/left.svg");
 }
-
 
 .icon-home:hover,
 .icon-home:focus {
-  background-image: url('../../images/navigation/home-hover.svg');
+    background-image: url("../../images/navigation/home-hover.svg");
 }
 .icon-about:hover,
 .icon-about:focus {
-  background-image: url('../../images/navigation/about-hover.svg');
+    background-image: url("../../images/navigation/about-hover.svg");
 }
 .icon-education:hover,
 .icon-education:focus {
-  background-image: url('../../images/navigation/education-hover.svg');
+    background-image: url("../../images/navigation/education-hover.svg");
 }
 .icon-portfolio:hover,
 .icon-portfolio:focus {
-  background-image: url('../../images/navigation/portfolio-hover.svg');
+    background-image: url("../../images/navigation/portfolio-hover.svg");
 }
 .icon-contacts:hover,
 .icon-contacts:focus {
-  background-image: url('../../images/navigation/contacts-hover.svg');
+    background-image: url("../../images/navigation/contacts-hover.svg");
 }
 .icon-right:hover,
 .icon-right:focus {
-  background-image: url('../../images/navigation/right-hover.svg');
+    background-image: url("../../images/navigation/right-hover.svg");
 }
 .icon-left:hover,
 .icon-left:focus {
-  background-image: url('../../images/navigation/left-hover.svg');
+    background-image: url("../../images/navigation/left-hover.svg");
+}
+
+@media only screen
+and (min-device-width: 768px)
+and (max-device-width: 1024px) {
+  .navigation{
+      display: none;
+  }
 }

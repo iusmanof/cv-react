@@ -31,7 +31,7 @@ $scroll-height: $content-height - 10vh;
 $home-height: $content-height - 10vh;
 $certificate-image-width: $content-widtht * 0.3;
 $certificate-image-padding: $certificate-image-width * 0.01;
-$portfolio-image-width: $content-widtht * 0.25;
+$portfolio-image-width: $content-widtht * 0.23;
 $block-padding: 20px;
 $contact-card-width: $content-widtht * 0.2;
 $contact-card-height: $content-height * 0.2;
@@ -43,22 +43,22 @@ $tbody-td-width: $content-widtht * 0.2;
 //// fonts
 %h1-title {
     font-weight: 900;
-    font-size: 6rem;
+    font-size: 4rem;
     line-height: 1.5em;
 }
 %h2-title {
     font-weight: 600;
-    font-size: 2.5rem;
+    font-size: 2rem;
     line-height: 2.5em;
 }
 %h3-title {
     font-weight: 200;
-    font-size: 2.1rem;
+    font-size: 1.9rem;
     line-height: 1.5em;
 }
 %h4-title {
     font-weight: 200;
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     line-height: 3em;
 }
 %btn-font {
@@ -107,7 +107,7 @@ $tbody-td-width: $content-widtht * 0.2;
 %points {
     position: absolute;
     opacity: 0.45;
-    top: 35px;
+    top: 47px;
     right: -25px;
     content: "";
     height: 30px;
@@ -173,4 +173,43 @@ $tbody-td-width: $content-widtht * 0.2;
     -moz-background-size: 6px 6px;
     background-size: 6px 6px;
     z-index: -1;
+}
+
+// category of porfolio and certificate
+%ul-category {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    li {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        overflow: hidden;
+        margin: 10px;
+        img {
+            width: $portfolio-image-width;
+        }
+        img:hover {
+            transition: all 0.3s ease-in-out;
+            transform: scale(1.5);
+        }
+        span {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            visibility: hidden;
+            padding: 5px 10px;
+            background-color: $main-dark-color;
+        }
+        h4 {
+            margin-top: 1em;
+            padding-top: 0.5em;
+            @extend %h4-title;
+        }
+    }
+     li:hover {
+            span {
+                visibility: visible;
+            }
+        }
 }
