@@ -3,15 +3,6 @@ import {BrowserRouter as Router, Route, Link} from "react-router-dom";
 
 import "./Nav.scss";
 
-import home from "../../images/navigation/home.svg";
-import about from "../../images/navigation/about.svg";
-import education from "../../images/navigation/education.svg";
-import portfolio from "../../images/navigation/portfolio.svg";
-import contacts from "../../images/navigation/contacts.svg";
-import left from "../../images/navigation/left.svg";
-import right from "../../images/navigation/right.svg";
-import Education from "../Education";
-
 function Nav() {
     return (
         <nav className="navigation">
@@ -43,7 +34,7 @@ function Nav() {
                     </a>
                 </li>
                 <li className="navigation__item" id="contactsToggler">
-                    <Link to="/contacts" nav-tooltip="Portfolio">
+                    <Link to="/contacts" nav-tooltip="Contacts">
                         <span className="icon icon-contacts"></span>
                     </Link>
                 </li>

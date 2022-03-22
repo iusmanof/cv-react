@@ -1,4 +1,4 @@
-import React from "react";
+import React, { ReactElement } from "react";
 import {useSpring, animated} from "react-spring";
 
 import "./Aside.scss";
@@ -10,21 +10,38 @@ import linkedin from "../../images/icons/linkedin.png";
 
 import cv_pdf from "../../images/certificate/js-fronend2021q1/js-fronend2021q1.pdf";
 
-function Aside() {
-    const props = useSpring({
+interface IAside{
+    homeLink?: ReactElement
+    aboutLink?: ReactElement
+    educationLink?: ReactElement
+    portfolioLink?: ReactElement
+    contactsLink?: ReactElement
+}
+
+function Aside(props: IAside) {
+    const propsAnimated = useSpring({
         from: {opacity: 0, marginTop: -2500},
         to: {opacity: 1, marginTop: 0},
         config: {delay: 1000, duration: 1200}
     });
-
+    
+    const {homeLink, aboutLink, educationLink, portfolioLink, contactsLink} = props;
     return (
-        <animated.div style={props}>
+        <animated.div style={propsAnimated}>
             <aside className="aside">
                 <div className="aside__photo-wrapper">
                     <img className="aside__photo" src={ava} alt="IMG" />
                 </div>
                 <h2 className="aside__header">Ihar Usmanau</h2>
                 <h3 className="aside__position">React Developer</h3>
+                <ul className="aside__burger-links">
+                    <li>{homeLink}</li>
+                    <li>{aboutLink}</li>
+                    <li>{educationLink}</li>
+                    <li>{portfolioLink}</li>
+                    <li>{contactsLink}</li>
+                </ul>
+
                 <ul className="aside__social-networks">
                     <li className="aside__item">
                         <a

@@ -26,13 +26,10 @@
     }
 }
 
-
-@media only screen
-and (min-device-width: 768px)
-and (max-device-width: 1024px) {
-    .home{
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .home {
         height: 100vh;
-        &__stacks{
+        &__stacks {
             display: none;
         }
     }

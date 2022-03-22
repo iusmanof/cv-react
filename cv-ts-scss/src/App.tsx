@@ -5,6 +5,7 @@ import React from "react";
 import "./App.scss";
 import "./reset.scss";
 import {BrowserRouter as Router, Routes, Route, Link} from "react-router-dom";
+import BurgerMenu from "./components/BurgerMenu";
 
 function App() {
     return (
@@ -13,10 +14,13 @@ function App() {
                 <div className="back-image">
                     <div className="wrapper">
                         <div className="content">
-                            <Aside />
+                            <div className="aside__wrapper">
+                              <Aside />
+                            </div>
                             <Main />
                         </div>
                         <Nav />
+                        <BurgerMenu />
                     </div>
                 </div>
             </div>

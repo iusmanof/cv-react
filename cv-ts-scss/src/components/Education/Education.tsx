@@ -76,13 +76,13 @@ const Education: FC<IProps> = () => {
                         <h4>CCNA</h4>
                     </li>
 
-                     <li>
+                    <li>
                         <img src={js_certificate} alt="nodejs-certificate" />
                         <span>...</span>
                         <h4>JS/Front-end certificate</h4>
                     </li>
 
-                     <li>
+                    <li>
                         <img src={nodejs_certificate} alt="nodejs-certificate" />
                         <span>...</span>
                         <h4>Nodejs certificate</h4>
