@@ -8,7 +8,14 @@ body {
 .category__header {
     z-index: 0;
     position: relative;
+    margin-bottom: 5px;
 }
 .category__header::after {
     @extend %points;
+}
+
+@media only screen and (min-device-width: 720px) and (max-device-width: 1024px) {
+    .category__header {
+        margin-bottom: 15px;
+    }
 }

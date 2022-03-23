@@ -44,23 +44,12 @@
     background-repeat: no-repeat;
 }
 
-/* Smartphones (portrait and landscape) ----------- */
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-    /* Styles */
-}
-
-/* Smartphones (landscape) ----------- */
-@media only screen and (min-width: 321px) {
-    /* Styles */
-}
-
-/* Smartphones (portrait) ----------- */
-@media only screen and (max-width: 320px) {
-    /* Styles */
-}
-
 /* iPads (portrait and landscape) ----------- */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+@media only screen and (min-device-width: 0px) and (max-device-width: 1024px) {
+    .back {
+        background: transparent;
+        background: none;
+    }
     .back-image {
         position: static;
         background-image: none;
@@ -77,34 +66,67 @@
     .content {
         flex-direction: row;
         width: 100vw;
-        height: 100vh;
+        height: 103vh;
         border-radius: 0px;
         font-family: "Roboto", sans-serif;
     }
 }
 
-/* iPads (landscape) ----------- */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
-    /* Styles */
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .back-image {
+        position: static;
+        background-image: none;
+        background-color: none;
+    }
 }
 
-/* iPads (portrait) ----------- */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
-    /* Styles */
-}
+// /* Smartphones (landscape) ----------- */
+// @media only screen
+// and (min-width: 321px) {
+//      .back-image {
+//         position: static;
+//         background-image: none;
+//     }
 
-/* Desktops and laptops ----------- */
-@media only screen and (min-width: 1224px) {
-    /* Styles */
-}
+//     .wrapper {
+//         display: flex;
+//         align-items: center;
+//         justify-content: center;
+//         height: 100%;
+//         width: 100%;
+//     }
 
-/* Large screens ----------- */
-@media only screen and (min-width: 1824px) {
-    /* Styles */
-}
+//     .content {
+//         flex-direction: row;
+//         width: 100vw;
+//         height: 100vh;
+//         border-radius: 0px;
+//         font-family: "Roboto", sans-serif;
+//     }
+// }
 
-/* iPhone 4 ----------- */
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
-    only screen and (min-device-pixel-ratio: 1.5) {
-    /* Styles */
-}
+// /* Smartphones (portrait) ----------- */
+// @media only screen
+// and (max-width: 320px) {
+//     .back-image {
+//         position: static;
+//         background-image: none;
+//     }
+
+//     .wrapper {
+//         display: flex;
+//         align-items: center;
+//         justify-content: center;
+//         height: 100%;
+//         width: 100%;
+//     }
+
+//     .content {
+//         flex-direction: row;
+//         width: 100vw;
+//         height: 100vh;
+//         border-radius: 0px;
+//         font-family: "Roboto", sans-serif;
+//     }
+// }

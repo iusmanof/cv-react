@@ -51,3 +51,18 @@
     cursor: pointer;
     color: $border-btn-color;
 }
+
+@media only screen and (min-device-width: 720px) and (max-device-width: 1024px) {
+    .education {
+        &__content {
+            font-size: 1.3vw;
+        }
+    }
+
+    .certificate-true {
+        font-size: 1vw;
+    }
+    .certificate-false {
+        font-size: 1vw;
+    }
+}

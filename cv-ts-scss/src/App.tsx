@@ -15,7 +15,7 @@ function App() {
                     <div className="wrapper">
                         <div className="content">
                             <div className="aside__wrapper">
-                              <Aside />
+                                <Aside />
                             </div>
                             <Main />
                         </div>

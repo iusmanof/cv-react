@@ -33,7 +33,6 @@ $certificate-image-width: $content-widtht * 0.3;
 $certificate-image-padding: $certificate-image-width * 0.01;
 $portfolio-image-width: $content-widtht * 0.23;
 $block-padding: 20px;
-$contact-card-width: $content-widtht * 0.2;
 $contact-card-height: $content-height * 0.2;
 $yandex-map-width: $content-widtht * 0.3;
 $yandex-map-height: $content-height * 0.5;
@@ -52,13 +51,13 @@ $tbody-td-width: $content-widtht * 0.2;
     line-height: 2.5em;
 }
 %h3-title {
-    font-weight: 200;
+    font-weight: 300;
     font-size: 1.6vw;
     line-height: 1.5em;
 }
 %h4-title {
-    font-weight: 200;
-    font-size: 1.2vw;
+    font-weight: 300;
+    font-size: 1.4vw;
     line-height: 3em;
 }
 %btn-font {
@@ -70,7 +69,7 @@ $tbody-td-width: $content-widtht * 0.2;
     border-radius: 2em;
 }
 %content {
-    font-size: 15px;
+    font-size: 1vw;
     font-family: poppins, Helvetica, sans-serif;
     line-height: 1.3em;
     color: $content-color;
@@ -107,11 +106,12 @@ $tbody-td-width: $content-widtht * 0.2;
 %points {
     position: absolute;
     opacity: 0.45;
-    top: 30px;
-    right: -25px;
+    top: 2.3vw;
+    right: -1.5vw;
     content: "";
-    height: 30px;
-    width: 50px;
+    height: 3vh;
+    width: 3vw;
+    margin-bottom: 10px;
     background-image: -webkit-repeating-radial-gradient(
         center center,
         #04b4e0,
@@ -211,5 +211,11 @@ $tbody-td-width: $content-widtht * 0.2;
         span {
             visibility: visible;
         }
+    }
+}
+
+@media only screen and (min-device-width: 720px) and (max-device-width: 1024px) {
+    %points {
+        height: 2vh;
     }
 }

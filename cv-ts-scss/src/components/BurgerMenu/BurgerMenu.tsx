@@ -3,11 +3,31 @@ import Aside from "../Aside";
 import {BrowserRouter as Router, Route, Link} from "react-router-dom";
 import "./BurgerMenu.scss";
 
-const HomeLink = () =>  <Link to="/"><span>Home</span></Link>
-const AboutLink = () =>  <Link to="/about"><span>About</span></Link>
-const EducationLink = () =>  <Link to="/education"><span>Education</span></Link>
-const PortfolioLink = () =>  <Link to="/education"><span>Portfolio</span></Link>
-const ContactsLink = () =>  <Link to="/education"><span>Contacts</span></Link>
+const HomeLink = () => (
+    <Link to="/">
+        <span>Home</span>
+    </Link>
+);
+const AboutLink = () => (
+    <Link to="/about">
+        <span>About</span>
+    </Link>
+);
+const EducationLink = () => (
+    <Link to="/education">
+        <span>Education</span>
+    </Link>
+);
+const PortfolioLink = () => (
+    <Link to="/portfolio">
+        <span>Portfolio</span>
+    </Link>
+);
+const ContactsLink = () => (
+    <Link to="/contacts">
+        <span>Contacts</span>
+    </Link>
+);
 
 const BurgerMenu = () => {
     const [burger, setBurger] = useState(false);
@@ -28,7 +48,13 @@ const BurgerMenu = () => {
             </div>
 
             <div className={menuClassName}>
-              <Aside homeLink={<HomeLink />} aboutLink={<AboutLink />} educationLink={<EducationLink />} portfolioLink={<PortfolioLink />} contactsLink={<ContactsLink />} />
+                <Aside
+                    homeLink={<HomeLink />}
+                    aboutLink={<AboutLink />}
+                    educationLink={<EducationLink />}
+                    portfolioLink={<PortfolioLink />}
+                    contactsLink={<ContactsLink />}
+                />
             </div>
         </div>
     );

@@ -17,12 +17,14 @@
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
-        width: $contact-card-width;
+        min-width: 16vw;
+        max-width: 20vw;
         height: 100px;
         margin: 20px;
         border: 1px solid $mini-window-border-grey-color;
         background-color: $mini-window-grey-color;
-        font-weight: 500;
+        font-weight: 400;
+        font-size: 1.3vw;
         img {
             width: 40px;
             filter: invert(54%) sepia(58%) saturate(3084%) hue-rotate(156deg) brightness(100%)
@@ -35,5 +37,18 @@
     &__yandex-map {
         width: $yandex-map-width;
         height: $yandex-map-height;
+    }
+}
+
+@media only screen and (min-device-width: 720px) and (max-device-width: 1024px) {
+    .contacts {
+        &__content ul li {
+            width: 20vw;
+            font-size: 1.5vw;
+        }
+        &__yandex-map {
+            width: 60vw;
+            height: 40vh;
+        }
     }
 }

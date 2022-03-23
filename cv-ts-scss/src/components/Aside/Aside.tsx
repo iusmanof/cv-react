@@ -1,4 +1,4 @@
-import React, { ReactElement } from "react";
+import React, {ReactElement} from "react";
 import {useSpring, animated} from "react-spring";
 
 import "./Aside.scss";
@@ -10,12 +10,12 @@ import linkedin from "../../images/icons/linkedin.png";
 
 import cv_pdf from "../../images/certificate/js-fronend2021q1/js-fronend2021q1.pdf";
 
-interface IAside{
-    homeLink?: ReactElement
-    aboutLink?: ReactElement
-    educationLink?: ReactElement
-    portfolioLink?: ReactElement
-    contactsLink?: ReactElement
+interface IAside {
+    homeLink?: ReactElement;
+    aboutLink?: ReactElement;
+    educationLink?: ReactElement;
+    portfolioLink?: ReactElement;
+    contactsLink?: ReactElement;
 }
 
 function Aside(props: IAside) {
@@ -24,7 +24,7 @@ function Aside(props: IAside) {
         to: {opacity: 1, marginTop: 0},
         config: {delay: 1000, duration: 1200}
     });
-    
+
     const {homeLink, aboutLink, educationLink, portfolioLink, contactsLink} = props;
     return (
         <animated.div style={propsAnimated}>
@@ -35,11 +35,11 @@ function Aside(props: IAside) {
                 <h2 className="aside__header">Ihar Usmanau</h2>
                 <h3 className="aside__position">React Developer</h3>
                 <ul className="aside__burger-links">
-                    <li>{homeLink}</li>
-                    <li>{aboutLink}</li>
-                    <li>{educationLink}</li>
-                    <li>{portfolioLink}</li>
-                    <li>{contactsLink}</li>
+                    <li className="aside__burger-link">{homeLink}</li>
+                    <li className="aside__burger-link">{aboutLink}</li>
+                    <li className="aside__burger-link">{educationLink}</li>
+                    <li className="aside__burger-link">{portfolioLink}</li>
+                    <li className="aside__burger-link">{contactsLink}</li>
                 </ul>
 
                 <ul className="aside__social-networks">

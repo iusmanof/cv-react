@@ -23,14 +23,30 @@
     &__stack span {
         padding: 5px;
         font-style: italic;
+        font-size: 1vw;
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+@media only screen and (min-device-width: 720px) and (max-device-width: 1024px) {
     .home {
         height: 100vh;
-        &__stacks {
-            display: none;
+        &__stacks span {
+            font-size: 1.6vw;
+        }
+    }
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .home {
+        &__title {
+            font-size: 7vw;
+        }
+        &__subtitle {
+            font-size: 3vw;
+        }
+        &__stacks span {
+            font-size: 2.5vw;
         }
     }
 }

@@ -20,7 +20,7 @@ const Home: FC<IProps> = () => {
                 <div className="home__stacks">
                     {count ? (
                         <Typist avgTypingDelay={50} onTypingDone={() => setCount(1)}>
-                            <span> TECHNOLOGY STACK </span>
+                            <span className="home__stack"> TECHNOLOGY STACK </span>
                             <Typist.Backspace count={20} delay={800} />
                             <div className="home__stack">
                                 <span>html</span>

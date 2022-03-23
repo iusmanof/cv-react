@@ -13,7 +13,7 @@
         " . . ."
         " . copyright . ";
     grid-template-columns: auto 26vw auto;
-    grid-template-rows: 10vh 20vw 2vw 3vw 4vw 1vw 6vw auto 20px;
+    grid-template-rows: 5vh 20vw 2vw 3vw 4vw 1vw 6vw auto 20px;
     justify-items: center;
     align-items: center;
     width: $aside-width;
@@ -27,7 +27,7 @@
         @extend %-points-aside-img;
     }
     &__photo {
-        width: 15vw;
+        width: 12vw;
         border: 3px solid $color-white;
         border-radius: 50%;
     }
@@ -40,9 +40,15 @@
         grid-area: position;
         @extend %h4-title;
     }
-    &__burger-links{
-        grid-area: burger-links;
+    &__burger {
+        &-links {
+            grid-area: burger-links;
+        }
+        &-link {
+            margin: 1rem;
+        }
     }
+
     &__social-networks {
         grid-area: links;
         display: flex;
@@ -61,7 +67,7 @@
     border: 2px solid $color-white;
     width: $button-aside-width;
     @extend %btn-font;
-        transition: 500ms linear;
+    transition: 500ms linear;
 }
 
 .button:hover {
@@ -77,14 +83,48 @@
     @extend %icons-props;
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-    .aside{
-        grid-template-rows: 10vh 20vw 2vw 3vw 4vw 1vw 6vw auto 20px;
-        height: 100vh;
+@media only screen and (min-device-width: 720px) and (max-device-width: 1024px) {
+    .aside {
+        grid-template-rows: 10vh 21vw 3vw 26px 200px 13vw 0vw auto 20px;
+        height: 105.5vh;
+        width: 30vw;
         font-family: "Roboto", sans-serif;
-    }
 
-    .aside__wrapper{
-       display: none;
+        &__wrapper {
+            display: none;
+        }
+
+        &__photo {
+            width: 15vw;
+        }
+        &__header {
+            font-size: 3vw;
+        }
+
+        &__position {
+            font-size: 1.7vw;
+        }
+
+        &__footer {
+            font-size: 1.4vw;
+        }
+
+        .button {
+            font-size: 1.5vw;
+        }
+    }
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .aside {
+        // grid-template-rows: 10vh 21vw 3vw 26px 200px 13vw 0vw auto 20px;
+        // height: 105.5vh;
+        // width: 30vw;
+        // font-family: "Roboto", sans-serif;
+
+        &__wrapper {
+            display: none;
+        }
     }
 }

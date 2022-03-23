@@ -31,29 +31,39 @@
     }
     &__projects {
         @extend %ul-category;
+
+        li {
+            img {
+                width: 20vw;
+            }
+
+            span {
+                width: 7vw;
+                font-size: 1.2vw;
+            }
+        }
     }
-    // &__project {
-    //     position: relative;
-    //     overflow: hidden;
-    //     img {
-    //         width: $portfolio-image-width;
-    //     }
-    //     img:hover {
-    //         transition: all 0.3s ease-in-out;
-    //         transform: scale(1.5);
-    //     }
-    //     span {
-    //         position: absolute;
-    //         top: 10px;
-    //         left: 10px;
-    //         visibility: hidden;
-    //         padding: 5px 10px;
-    //         background-color: $main-dark-color;
-    //     }
-    // }
-    // &__project:hover {
-    //     span {
-    //         visibility: visible;
-    //     }
-    // }
+}
+
+@media only screen and (min-device-width: 720px) and (max-device-width: 1024px) {
+    .portfolio {
+        &__category ul li {
+            font-size: 2vw;
+        }
+        &__projects {
+            li {
+                img {
+                    width: 35vw;
+                }
+
+                span {
+                    width: 7vw;
+                    font-size: 1.2vw;
+                }
+                h4 {
+                    font-size: 2vw;
+                }
+            }
+        }
+    }
 }
