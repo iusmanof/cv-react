@@ -24,7 +24,7 @@ const Education: FC<IProps> = () => {
 
     return (
         <animated.div style={props}>
-            <div className="education">
+            <div className="education scroll-content">
                 <h2 className="education__header  category__header">Education</h2>
                 <div className="education__content">
                     <table>

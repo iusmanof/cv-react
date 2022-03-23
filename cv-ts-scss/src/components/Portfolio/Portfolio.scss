@@ -55,13 +55,34 @@
                 img {
                     width: 35vw;
                 }
-
                 span {
                     width: 7vw;
                     font-size: 1.2vw;
                 }
                 h4 {
                     font-size: 2vw;
+                }
+            }
+        }
+    }
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 220px) and (max-device-width: 480px) {
+    .portfolio {
+        &__header {
+            font-size: 4vw;
+        }
+        &__category ul li {
+            font-size: 3vw;
+        }
+        &__projects {
+            li {
+                img {
+                    width: 50vw;
+                }
+                h4 {
+                    font-size: 3vw;
                 }
             }
         }

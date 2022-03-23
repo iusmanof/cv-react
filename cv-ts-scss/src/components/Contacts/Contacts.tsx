@@ -36,7 +36,7 @@ const Contacts: FC<IProps> = () => {
     return (
         <animated.div style={props}>
             <div>
-                <div className="contacts">
+                <div className="contacts scroll-content">
                     <h2 className="contacts__header  category__header">Contacts</h2>
                     <p className="contacts__content">
                         <ul>

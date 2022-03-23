@@ -7,47 +7,22 @@
     background-color: $main-dark-color;
 }
 
-.scroll-content {
-    height: $scroll-height;
-    margin-right: 15px;
-    margin-top: 25px;
-    overflow-y: scroll;
-    scroll-behavior: smooth;
-    scrollbar-width: thin;
-    scrollbar-color: $scroll-color $main-dark-color;
-}
-
-.scroll-content::-moz-scrollbar {
-    @extend %scroll-content-moz;
-}
-
-.scroll-content::-webkit-scrollbar {
-    @extend %scroll-content-webkit;
-}
-
-.scroll-content::-webkit-scrollbar-thumb {
-    border-radius: $content-border-radius;
-    background: $scroll-color;
-}
-
-.scroll-content::-webkit-scrollbar-thumb:hover {
-    cursor: pointer;
-    background: $scroll-color;
-}
-
 @media only screen and (min-device-width: 0px) and (max-device-width: 1024px) {
     .main {
         width: 100%;
-        height: 105.5vh;
+        height: auto;
         border-radius: 0px;
         background-color: $main-dark-color;
     }
     .scroll-content {
-        height: 103vh;
+        height: auto;
         overflow: hidden;
     }
 }
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .scroll-content {
+        height: 200vh;
+    }
 }

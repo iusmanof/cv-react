@@ -28,5 +28,18 @@
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
     .about {
+        &__header {
+            font-size: 4vw;
+        }
+        &__content p {
+            font-family: "Roboto", sans-serif;
+            font-weight: 300;
+            font-size: 2vw;
+        }
+        &__skills ul li {
+            font-family: "Roboto", sans-serif;
+            font-weight: 300;
+            font-size: 2vw;
+        }
     }
 }

@@ -96,10 +96,12 @@ $tbody-td-width: $content-widtht * 0.2;
 %scroll-content-moz {
     width: 6px;
     border-radius: $content-border-radius;
+    background-color: #242424;
 }
 %scroll-content-webkit {
     width: 6px;
     border-radius: $content-border-radius;
+    background-color: #242424;
 }
 
 //// points-design
@@ -217,5 +219,24 @@ $tbody-td-width: $content-widtht * 0.2;
 @media only screen and (min-device-width: 720px) and (max-device-width: 1024px) {
     %points {
         height: 2vh;
+    }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    %points {
+        top: 3vw;
+        right: -3vw;
+        height: 4vh;
+        width: 7vw;
+    }
+    %scroll-content-moz {
+        width: 2px;
+        border-radius: $content-border-radius;
+        background-color: #242424;
+    }
+    %scroll-content-webkit {
+        width: 2px;
+        border-radius: $content-border-radius;
+        background-color: #242424;
     }
 }

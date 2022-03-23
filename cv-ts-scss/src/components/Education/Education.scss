@@ -52,17 +52,42 @@
     color: $border-btn-color;
 }
 
-@media only screen and (min-device-width: 720px) and (max-device-width: 1024px) {
+@media only screen and (min-device-width: 480px) and (max-device-width: 1024px) {
     .education {
         &__content {
             font-size: 1.3vw;
         }
     }
-
     .certificate-true {
         font-size: 1vw;
     }
     .certificate-false {
         font-size: 1vw;
+    }
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .education {
+        &__header {
+            font-size: 4vw;
+        }
+        &__content {
+            font-size: 2vw;
+        }
+        &__certificates li img {
+            width: 50vw;
+        }
+
+        &__certificates li h4 {
+            font-size: 3vw;
+        }
+    }
+
+    .certificate-true {
+        font-size: 1.3vw;
+    }
+    .certificate-false {
+        font-size: 1.3vw;
     }
 }

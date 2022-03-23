@@ -66,30 +66,15 @@
     .burger-menu__wrapper {
         display: block;
         position: absolute;
-        top: -105.5%;
+        top: -100%;
         right: 0;
         z-index: 20;
-        width: 30vw;
-        height: 105.5vh;
+        height: 100%;
         background-color: $nav-color;
         transition: all 0.5s ease 0.2s;
         &-active {
             top: 0;
             transition: all 0.5s ease 0.2s;
-        }
-    }
-}
-
-/* Smartphones (portrait and landscape) ----------- */
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-    .aside {
-        // grid-template-rows: 10vh 21vw 3vw 26px 200px 13vw 0vw auto 20px;
-        // height: 105.5vh;
-        // width: 30vw;
-        // font-family: "Roboto", sans-serif;
-
-        &__wrapper {
-            display: none;
         }
     }
 }

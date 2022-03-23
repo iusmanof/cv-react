@@ -35,7 +35,7 @@
         padding: 20px;
     }
     &__yandex-map {
-        width: $yandex-map-width;
+        width: 17vw;
         height: $yandex-map-height;
     }
 }
@@ -45,6 +45,29 @@
         &__content ul li {
             width: 20vw;
             font-size: 1.5vw;
+        }
+        &__yandex-map {
+            width: 60vw;
+            height: 40vh;
+        }
+    }
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 200px) and (max-device-width: 480px) {
+    .contacts {
+        &__header {
+            font-size: 4vw;
+        }
+        &__content {
+            flex-direction: column-reverse;
+            margin: 0 auto;
+        }
+        &__content ul li {
+            max-width: 80vw;
+            height: 80px;
+            margin: 10px;
+            font-size: 4vw;
         }
         &__yandex-map {
             width: 60vw;

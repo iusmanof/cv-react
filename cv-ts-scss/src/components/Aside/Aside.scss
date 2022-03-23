@@ -83,11 +83,11 @@
     @extend %icons-props;
 }
 
-@media only screen and (min-device-width: 720px) and (max-device-width: 1024px) {
+@media only screen and (min-device-width: 480px) and (max-device-width: 1024px) {
     .aside {
         grid-template-rows: 10vh 21vw 3vw 26px 200px 13vw 0vw auto 20px;
-        height: 105.5vh;
         width: 30vw;
+        height: 99vh;
         font-family: "Roboto", sans-serif;
 
         &__wrapper {
@@ -111,6 +111,7 @@
 
         .button {
             font-size: 1.5vw;
+            border: 1px solid white;
         }
     }
 }
@@ -118,13 +119,51 @@
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
     .aside {
-        // grid-template-rows: 10vh 21vw 3vw 26px 200px 13vw 0vw auto 20px;
-        // height: 105.5vh;
-        // width: 30vw;
-        // font-family: "Roboto", sans-serif;
+        grid-template-rows: 20px 190px 30px 80px 119px 51px 9px auto 237px;
+        grid-template-columns: auto 85vw auto;
+        width: 100vw;
+        font-family: "Roboto", sans-serif;
 
         &__wrapper {
             display: none;
+        }
+
+        &__photo {
+            width: 40vw;
+        }
+
+        &__header {
+            font-size: 8vw;
+        }
+
+        &__position {
+            font-size: 5vw;
+        }
+
+        &__burger-link {
+            font-size: 5vw;
+            margin: 2vw;
+        }
+        &__link img {
+            height: 3vw;
+        }
+
+        &__social-networks {
+            justify-content: space-between;
+            width: 20vw;
+        }
+
+        &__footer {
+            font-size: 2.2vw;
+        }
+
+        .link-vk img {
+            height: 2.5vw;
+        }
+
+        .button {
+            font-size: 3.5vw;
+            border: 1px solid white;
         }
     }
 }
