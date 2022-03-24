@@ -1,0 +1,60 @@
+@import "./utils/variables.scss";
+
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+.category__header {
+    z-index: 0;
+    position: relative;
+    margin-bottom: 5px;
+}
+.category__header::after {
+    @extend %points;
+}
+
+.scroll-content {
+    height: 68vh;
+    margin-right: 15px;
+    margin-top: 25px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scrollbar-color: $scroll-color $main-dark-color;
+    background-color: $main-dark-color;
+}
+
+.scroll-content::-moz-scrollbar {
+    @extend %scroll-content-moz;
+    background-color: $main-dark-color;
+}
+
+.scroll-content::-webkit-scrollbar {
+    @extend %scroll-content-webkit;
+    background: $main-dark-color;
+}
+
+.scroll-content::-webkit-scrollbar-thumb {
+    border-radius: $content-border-radius;
+    background: $scroll-color;
+}
+
+.scroll-content::-webkit-scrollbar-thumb:hover {
+    cursor: pointer;
+    background: $scroll-color;
+}
+
+@media only screen and (min-device-width: 720px) and (max-device-width: 1024px) {
+    .category__header {
+        margin-bottom: 15px;
+    }
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .category__header {
+        margin-bottom: 10px;
+        font-size: 3vw;
+    }
+}
