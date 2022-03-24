@@ -1,11 +1,9 @@
-import React, {FC} from "react";
+import {FC} from "react";
 import "./Education.scss";
 
 import js_certificate from "../../images/certificate/js-fronend2021q1/js-fronend2021q1-1.jpg";
 import nodejs_certificate from "../../images/certificate/nodejs2021q4/nodejs2021q4-1.jpg";
 
-import js_pdf from "../../images/certificate/js-fronend2021q1/js-fronend2021q1.pdf";
-import nodejs_pdf from "../../images/certificate/nodejs2021q4/nodejs2021q4.pdf";
 import {useSpring, animated} from "react-spring";
 interface IProps {}
 

@@ -47,6 +47,7 @@ function Aside(props: IAside) {
                         <a
                             href="https://vk.com/iharusmanau"
                             target="_blank"
+                            rel="noreferrer"
                             className="aside__link link-vk"
                         >
                             <img src={vk} alt="vk" />
@@ -56,6 +57,7 @@ function Aside(props: IAside) {
                         <a
                             href="https://www.facebook.com/iharusmanau"
                             target="_blank"
+                            rel="noreferrer"
                             className="aside__link link-facebook"
                         >
                             <img src={facebook} alt="facebook" />
@@ -65,6 +67,7 @@ function Aside(props: IAside) {
                         <a
                             href="https://www.linkedin.com/in/iharusmanau"
                             target="_blank"
+                            rel="noreferrer"
                             className="aside__link link-linkedin"
                         >
                             <img src={linkedin} alt="linkedin" />
@@ -72,12 +75,22 @@ function Aside(props: IAside) {
                     </li>
                 </ul>
                 <div className="button">
-                    <a className="button-dowload" href={cv_pdf} target="_blank" download>
+                    <a
+                        className="button-dowload"
+                        href={cv_pdf}
+                        target="_blank"
+                        rel="noreferrer"
+                        download
+                    >
                         Download CV
                     </a>
                 </div>
                 <div className="aside__footer">
-                    <a href="https://lmpixels.com/demo/breezycv/dark/1/index.html" target="_blank">
+                    <a
+                        href="https://lmpixels.com/demo/breezycv/dark/1/index.html"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
                         &copy; 2021 All Right Reserved
                     </a>
                 </div>

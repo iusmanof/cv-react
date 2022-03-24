@@ -1,4 +1,4 @@
-import React, {FC, useState, useEffect} from "react";
+import React, {FC, useState} from "react";
 import {useSpring, animated} from "react-spring";
 import Typist from "react-typist";
 
