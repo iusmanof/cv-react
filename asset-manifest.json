@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/static/css/main.3a07aaed.css",
+    "main.js": "/static/js/main.77cf5ca7.js",
+    "static/media/js-fronend2021q1-1.jpg": "/static/media/js-fronend2021q1-1.582fdb3d2b4fd59aa5c8.jpg",
+    "static/media/nodejs2021q4-1.jpg": "/static/media/nodejs2021q4-1.8fe8a7ea1444b371af02.jpg",
+    "static/media/cv_project.png": "/static/media/cv_project.52d47c774468395509a4.png",
+    "static/media/main_background.png": "/static/media/main_background.0bbbf00018c241959227.png",
+    "static/media/ava.png": "/static/media/ava.32a762339a0b08f860cc.png",
+    "static/media/js-fronend2021q1.pdf": "/static/media/js-fronend2021q1.2c5c851139ad1d0ad181.pdf",
+    "static/media/about-hover.svg": "/static/media/about-hover.fb60c08b88caabae6b8c.svg",
+    "static/media/about.svg": "/static/media/about.8b6f433276ceb122e279.svg",
+    "static/media/vk.svg": "/static/media/vk.01b3521edea557fea0c51288496274ba.svg",
+    "static/media/portfolio-hover.svg": "/static/media/portfolio-hover.75578af69b29cc1e4817.svg",
+    "static/media/portfolio.svg": "/static/media/portfolio.0df1bac9de1a43a61575.svg",
+    "static/media/linkedin.svg": "/static/media/linkedin.015e332fa9c33cc1d5d330e95d8281bc.svg",
+    "index.html": "/index.html",
+    "static/media/education-hover.svg": "/static/media/education-hover.bae0d203dec5b2f6563c.svg",
+    "static/media/education.svg": "/static/media/education.345ac3472c988be4d6c0.svg",
+    "static/media/phone.svg": "/static/media/phone.dd5546b9aa96045f5f708a2b116a9be4.svg",
+    "static/media/facebook.svg": "/static/media/facebook.ca206bdaed56d2ff45a8b11a909489f2.svg",
+    "static/media/contacts.svg": "/static/media/contacts.11d3bbf0f5043746a0e5.svg",
+    "static/media/contacts-hover.svg": "/static/media/contacts-hover.d43677423338ddd8adf0.svg",
+    "static/media/home-hover.svg": "/static/media/home-hover.7b7d7becc846b981b3ed.svg",
+    "static/media/home.svg": "/static/media/home.814fe7b7c9c00f38fbc4.svg",
+    "static/media/geolocation.svg": "/static/media/geolocation.2d2f3b34edc431e17339512410734f8d.svg",
+    "static/media/email.svg": "/static/media/email.2cede5c315dfb9a524f2569b59c2a03c.svg",
+    "static/media/right-hover.svg": "/static/media/right-hover.49f93fa5fec9282eb0ae.svg",
+    "static/media/right.svg": "/static/media/right.bb786ae08b770fc151ff.svg",
+    "static/media/left-hover.svg": "/static/media/left-hover.7f88eccc3ff90d397b66.svg",
+    "static/media/left.svg": "/static/media/left.b5b686b3dea5c9404aac.svg",
+    "main.3a07aaed.css.map": "/static/css/main.3a07aaed.css.map",
+    "main.77cf5ca7.js.map": "/static/js/main.77cf5ca7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3a07aaed.css",
+    "static/js/main.77cf5ca7.js"
+  ]
+}
