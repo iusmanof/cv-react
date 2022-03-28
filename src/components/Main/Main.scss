@@ -23,7 +23,14 @@
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-    // .scroll-content {
-    //     height: 100vh;
-    // }
+    .main {
+        height: 110vh;
+    }
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width: 481px) and (max-device-width: 812px) {
+    .main {
+        height: 120vh;
+    }
 }
