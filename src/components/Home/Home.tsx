@@ -7,22 +7,20 @@ import "./Home.scss";
 interface IProps {}
 const Home: FC<IProps> = () => {
     const props = useSpring({
-        // from: {opacity: 0, transform: "translate3d(0,100%,0)"},
-        // to: {opacity: 1, transform: "translate3d(0%,0,0)"},
+        from: {opacity: 0, transform: "translate3d(0,100%,0)"},
+        to: {opacity: 1, transform: "translate3d(0%,0,0)"},
         config: {delay: 2000, duration: 1000}
     });
-    const [count, setCount] = useState(1);
-
+    const [type, setTypingDone] = useState(true)
     return (
         <animated.div style={props}>
-            <div className="home">
-                <h1 className="home__title">Ihar Usmanau</h1>
+            <div className="home scroll-content">
+                <h1 className="home__title">Igor Usmanov</h1>
                 <h2 className="home__subtitle">Frontend/React Developer</h2>
                 <div className="home__stacks">
-                    {count ? (
-                        <Typist avgTypingDelay={50} onTypingDone={() => setCount(1)}>
+                            {type && <> <Typist avgTypingDelay={50} onTypingDone={() => setTypingDone(false)} >
                             <span className="home__stack"> TECHNOLOGY STACK </span>
-                            <Typist.Backspace count={20} delay={800} />
+                            <Typist.Backspace count={20} delay={800} onTypingDone={() => setTypingDone(false)}  />
                             <div className="home__stack">
                                 <span>html</span>
                                 <span>css</span>
@@ -49,11 +47,9 @@ const Home: FC<IProps> = () => {
                                 <span>prettier</span>
                             </div>
                             <Typist.Backspace count={100} delay={800} />
-                        </Typist>
-                    ) : (
-                        ""
-                    )}
+                        </Typist></>}
                 </div>
+           
             </div>
         </animated.div>
     );

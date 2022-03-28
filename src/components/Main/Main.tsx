@@ -11,6 +11,7 @@ function Main() {
         <main className="main">
             <Routes>
                 <Route path="/" element={<Home />} />
+                <Route path="*" element={<Home />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/education" element={<Education />} />
                 <Route path="/portfolio" element={<Portfolio />} />

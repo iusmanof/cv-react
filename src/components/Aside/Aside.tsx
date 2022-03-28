@@ -29,7 +29,7 @@ function Aside(props: IAside) {
                 <div className="aside__photo-wrapper">
                     <img className="aside__photo" src={ava} alt="IMG" />
                 </div>
-                <h2 className="aside__header">Ihar Usmanau</h2>
+                <h2 className="aside__header">Igor Usmanov</h2>
                 <h3 className="aside__position">React Developer</h3>
                 <ul className="aside__burger-links">
                     <li className="aside__burger-link">{homeLink}</li>

@@ -2,7 +2,7 @@ import "./About.scss";
 
 const About = () => {
     return (
-        <div className="about">
+        <div className="about scroll-content">
             <h2 className="about__header category__header">About me</h2>
             <p className="about__content">
                 <p>
