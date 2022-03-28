@@ -79,7 +79,7 @@ const Contacts: FC<IProps> = () => {
                                     target="_blank"
                                     rel="noreferrer"
                                 >
-                                    Ihar Usmanau
+                                    Игорь Усманов
                                 </a>
                             </li>
                         </ul>

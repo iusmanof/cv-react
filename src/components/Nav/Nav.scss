@@ -25,6 +25,12 @@
     &__link {
         font-size: 2rem;
     }
+    &-link__active{
+        width: 55px;
+        height: 37px;
+        display: inline-block;
+        background: #04b4e0;
+    }
 
     &__arrows {
         display: flex;
@@ -100,6 +106,22 @@
 }
 .icon-left {
     background-image: url("../../images/navigation/left.svg");
+}
+
+.icon-home-active {
+    background-image: url("../../images/navigation/home-hover.svg");
+}
+.icon-about-active {
+    background-image: url("../../images/navigation/about-hover.svg");
+}
+.icon-education-active {
+    background-image: url("../../images/navigation/education-hover.svg");
+}
+.icon-portfolio-active {
+    background-image: url("../../images/navigation/portfolio-hover.svg");
+}
+.icon-contacts-active {
+    background-image: url("../../images/navigation/contacts-hover.svg");
 }
 
 .icon-home:hover,

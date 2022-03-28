@@ -37,6 +37,14 @@
                 width: 20vw;
             }
 
+            h4 a {
+                transition: all 0.5s ease-in;
+            }
+            h4 a:hover {
+                text-transform: uppercase;
+                color: $border-btn-color;
+            }
+
             span {
                 width: 7vw;
                 font-size: 1.2vw;

@@ -31,9 +31,16 @@ const Portfolio: FC<IProps> = () => {
 
                 <ul className="portfolio__projects">
                     <li className="portfolio__project">
-                        <img src={cv} alt="cv" />
-                        <span>CV on image</span>
-                        <h4>Title CV</h4>
+                        <img
+                            src="https://user-images.githubusercontent.com/74846667/159911557-1ab2e807-6c16-49ed-8ac7-0f29dc9cb181.PNG"
+                            alt="cv"
+                        />
+                        <span>cv react</span>
+                        <h4>
+                            <a href="https://github.com/iusmanof/cv-react/tree/react-cv">
+                                github link
+                            </a>
+                        </h4>
                     </li>
                 </ul>
             </div>

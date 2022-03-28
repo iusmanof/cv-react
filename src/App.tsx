@@ -20,7 +20,7 @@ const Start = () => {
             </div>
             <Nav />
             <BurgerMenu />
-       </>
+        </>
     );
 };
 

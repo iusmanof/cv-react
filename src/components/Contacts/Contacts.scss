@@ -25,6 +25,12 @@
         background-color: $mini-window-grey-color;
         font-weight: 400;
         font-size: 1.3vw;
+        a {
+            transition: all 0.2s linear;
+        }
+        a:hover {
+            color: $border-btn-color;
+        }
         img {
             width: 40px;
             filter: invert(54%) sepia(58%) saturate(3084%) hue-rotate(156deg) brightness(100%)

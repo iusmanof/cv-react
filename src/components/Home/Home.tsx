@@ -7,8 +7,9 @@ import "./Home.scss";
 interface IProps {}
 const Home: FC<IProps> = () => {
     const props = useSpring({
-        from: {opacity: 0, transform: "translate3d(0,100%,0)"},
-        to: {opacity: 1, transform: "translate3d(0%,0,0)"}
+        // from: {opacity: 0, transform: "translate3d(0,100%,0)"},
+        // to: {opacity: 1, transform: "translate3d(0%,0,0)"},
+        config: {delay: 2000, duration: 1000}
     });
     const [count, setCount] = useState(1);
 

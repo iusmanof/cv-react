@@ -1,23 +1,17 @@
-import {FC} from "react";
 import "./Education.scss";
 
 import js_certificate from "../../images/certificate/js-fronend2021q1/js-fronend2021q1-1.jpg";
+import js_certificate_pdf from "../../images/certificate/js-fronend2021q1/js-fronend2021q1.pdf";
 import nodejs_certificate from "../../images/certificate/nodejs2021q4/nodejs2021q4-1.jpg";
+import nodejs_certificate_pdf from "../../images/certificate/nodejs2021q4/nodejs2021q4.pdf";
 
 import {useSpring, animated} from "react-spring";
-interface IProps {}
 
-/**
- * @author
- * @class @Education
- **/
-
-const Education: FC<IProps> = () => {
-    // const props = useSpring({ from: { opacity: 0, marginLeft: -2500 }, to:{ opacity: 1, marginLeft: 0 }, config: { delay: 2000, duration: 2000} })
+const Education = () => {
     const props = useSpring({
         from: {opacity: 0, transform: "translate3d(0,100%,0)"},
-        to: {opacity: 1, transform: "translate3d(0%,0,0)"}
-        // config: {delay: 2000, duration: 200}
+        to: {opacity: 1, transform: "translate3d(0%,0,0)"},
+        config: {delay: 2000, duration: 1000}
     });
 
     return (
@@ -70,20 +64,31 @@ const Education: FC<IProps> = () => {
                 <ul className="education__certificates">
                     <li>
                         <img src={nodejs_certificate} alt="nodejs-certificate" />
-                        <span>...</span>
-                        <h4>CCNA</h4>
+                        <span>CCNA</span>
+                        <h4>
+                            <a href={nodejs_certificate_pdf} download>
+                                Download
+                            </a>
+                        </h4>
                     </li>
-
                     <li>
                         <img src={js_certificate} alt="nodejs-certificate" />
-                        <span>...</span>
-                        <h4>JS/Front-end certificate</h4>
+                        <span>JS/Front-end certificate</span>
+                        <h4>
+                            <a href={js_certificate_pdf} download>
+                                Download
+                            </a>
+                        </h4>
                     </li>
 
                     <li>
                         <img src={nodejs_certificate} alt="nodejs-certificate" />
-                        <span>...</span>
-                        <h4>Nodejs certificate</h4>
+                        <span>Nodejs certificate</span>
+                        <h4>
+                            <a href={nodejs_certificate_pdf} download>
+                                Download
+                            </a>
+                        </h4>
                     </li>
                 </ul>
             </div>

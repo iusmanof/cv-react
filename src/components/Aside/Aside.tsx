@@ -1,13 +1,10 @@
-import React, {ReactElement} from "react";
+import {ReactElement} from "react";
 import {useSpring, animated} from "react-spring";
-
 import "./Aside.scss";
 import ava from "../../images/ava.png";
-
-import vk from "../../images/icons/vk.png";
+import vk from "../../images/icons/vk.svg";
 import facebook from "../../images/icons/facebook.png";
 import linkedin from "../../images/icons/linkedin.png";
-
 import cv_pdf from "../../images/certificate/js-fronend2021q1/js-fronend2021q1.pdf";
 
 interface IAside {
@@ -49,9 +46,7 @@ function Aside(props: IAside) {
                             target="_blank"
                             rel="noreferrer"
                             className="aside__link link-vk"
-                        >
-                            <img src={vk} alt="vk" />
-                        </a>
+                        ></a>
                     </li>
                     <li className="aside__item">
                         <a
@@ -59,9 +54,7 @@ function Aside(props: IAside) {
                             target="_blank"
                             rel="noreferrer"
                             className="aside__link link-facebook"
-                        >
-                            <img src={facebook} alt="facebook" />
-                        </a>
+                        ></a>
                     </li>
                     <li className="aside__item">
                         <a
@@ -69,9 +62,7 @@ function Aside(props: IAside) {
                             target="_blank"
                             rel="noreferrer"
                             className="aside__link link-linkedin"
-                        >
-                            <img src={linkedin} alt="linkedin" />
-                        </a>
+                        ></a>
                     </li>
                 </ul>
                 <div className="button">

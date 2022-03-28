@@ -1,52 +1,49 @@
-import {Link} from "react-router-dom";
+import {useEffect, useRef, useState} from "react";
+import {NavLink} from 'react-router-dom'
 
 import "./Nav.scss";
+const links = ["/", "/about", "/education", "/portfolio", "/contacts"];
 
 function Nav() {
     return (
         <nav className="navigation">
             <ul className="navigation__list">
                 <li className="navigation__item" id="homeToggler">
-                    <Link to="/" nav-tooltip="Home">
-                        <span className="icon icon-home"></span>
-                    </Link>
+                    <NavLink 
+                    to="/" 
+                     nav-tooltip="Home" 
+                     className={(navData) => (navData.isActive ? 'icon icon-home-active' : 'icon icon-home')}>
+                    </NavLink>
                 </li>
                 <li className="navigation__item" id="aboutToggler">
-                    <Link to="/about" nav-tooltip="About">
-                        <span className="icon icon-about"></span>
-                    </Link>
+                    <NavLink 
+                    to="/about"
+                     nav-tooltip="About"
+                     className={(navData) => (navData.isActive ? 'icon icon-about-active' : 'icon icon-about')}>
+                    </NavLink>
                 </li>
                 <li className="navigation__item" id="educationToggle">
-                    <Link to="/education" nav-tooltip="Education">
-                        <span className="icon icon-education"></span>
-                    </Link>
+                    <NavLink 
+                    to="/education" 
+                    nav-tooltip="Education"
+                    className={(navData) => (navData.isActive ? 'icon icon-education-active' : 'icon icon-education')}>
+                    </NavLink>
                 </li>
                 <li className="navigation__item" id="porfolioToggler">
-                    <a
-                        className="navigation_link navigation_link-portfolio"
-                        href="#porfolio"
-                        nav-tooltip="Portfolio"
-                    >
-                        <Link to="/portfolio">
-                            <span className="icon icon-portfolio"></span>
-                        </Link>
-                    </a>
+                    <NavLink 
+                    to="/portfolio"
+                     nav-tooltip="Portfolio"
+                     className={(navData) => (navData.isActive ? 'icon icon-portfolio-active' : 'icon icon-portfolio')}>
+                    </NavLink>
                 </li>
                 <li className="navigation__item" id="contactsToggler">
-                    <Link to="/contacts" nav-tooltip="Contacts">
-                        <span className="icon icon-contacts"></span>
-                    </Link>
+                    <NavLink 
+                    to="/contacts" 
+                    nav-tooltip="Contacts"
+                    className={(navData) => (navData.isActive ? 'icon icon-contacts-active' : 'icon icon-contacts')}>
+                    </NavLink>
                 </li>
             </ul>
-
-            <div className="navigation__arrows">
-                <Link to="/about" nav-tooltip="next">
-                    <span className="icon icon-right"></span>
-                </Link>
-                <Link to="/about" nav-tooltip="prev">
-                    <span className="icon icon-left"></span>
-                </Link>
-            </div>
         </nav>
     );
 }

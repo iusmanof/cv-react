@@ -43,6 +43,12 @@
     &__burger {
         &-links {
             grid-area: burger-links;
+            span {
+                transition: all 0.2s linear;
+            }
+            span:hover {
+                color: $border-btn-color;
+            }
         }
         &-link {
             margin: 1rem;
@@ -55,6 +61,11 @@
         flex-direction: row;
         justify-content: space-evenly;
         width: $aside-icons-width-grid;
+
+        .aside__link {
+            width: 30px;
+            height: 30px;
+        }
     }
     &__footer {
         grid-area: copyright;
@@ -81,6 +92,30 @@
 .link-facebook,
 .link-linkedin {
     @extend %icons-props;
+}
+
+.link-vk {
+    background-image: url("../../images/icons/vk.svg");
+}
+
+.link-facebook {
+    background-image: url("../../images/icons/facebook.svg");
+}
+
+.link-linkedin {
+    background-image: url("../../images/icons/linkedin.svg");
+}
+
+.link-vk:hover {
+    background-image: url("../../images/icons/vk-hover.svg");
+}
+
+.link-facebook:hover {
+    background-image: url("../../images/icons/facebook-hover.svg");
+}
+
+.link-linkedin:hover {
+    background-image: url("../../images/icons/linkedin-hover.svg");
 }
 
 @media only screen and (min-device-width: 480px) and (max-device-width: 1024px) {
