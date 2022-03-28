@@ -10,7 +10,9 @@
         position: relative;
         box-sizing: inherit;
         visibility: visible;
-        @extend %h2-title;
+        font-weight: 600;
+        font-size: 2vw;
+        line-height: 2.5em;
     }
     &__content p {
         text-align: justify;
@@ -29,17 +31,17 @@
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
     .about {
         &__header {
-            font-size: 4vw;
+            font-size: 11vw;
         }
         &__content p {
             font-family: "Roboto", sans-serif;
             font-weight: 300;
-            font-size: 2vw;
+            font-size: 6vw;
         }
         &__skills ul li {
             font-family: "Roboto", sans-serif;
             font-weight: 300;
-            font-size: 2vw;
+            font-size: 6vw;
         }
     }
 }
@@ -48,17 +50,36 @@
 @media only screen and (min-width: 481px) and (max-device-width: 812px) {
     .about {
         &__header {
-            font-size: 4vw;
+            font-size: 7vw;
         }
         &__content p {
             font-family: "Roboto", sans-serif;
             font-weight: 300;
-            font-size: 2vw;
+            font-size: 4vw;
         }
         &__skills ul li {
             font-family: "Roboto", sans-serif;
             font-weight: 300;
-            font-size: 2vw;
+            font-size: 4vw;
+        }
+    }
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+    .about {
+        &__header {
+            font-size: 7vw;
+        }
+        &__content p {
+            font-family: "Roboto", sans-serif;
+            font-weight: 300;
+            font-size: 3vw;
+        }
+        &__skills ul li {
+            font-family: "Roboto", sans-serif;
+            font-weight: 300;
+            font-size: 3vw;
         }
     }
 }

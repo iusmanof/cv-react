@@ -218,16 +218,28 @@ $tbody-td-width: $content-widtht * 0.2;
 
 @media only screen and (min-device-width: 720px) and (max-device-width: 1024px) {
     %points {
-        height: 2vh;
+        top: 8vw;
+        right: -3vw;
+        height: 4vh;
+        width: 7vw;
+    }
+}
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+    %points {
+        top: 10vw;
+        right: -3vw;
+        height: 5vh;
+        width: 8vw;
     }
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
     %points {
-        top: 3vw;
+        top: 14vw;
         right: -3vw;
-        height: 4vh;
-        width: 7vw;
+        height: 5vh;
+        width: 10vw;
     }
     %scroll-content-moz {
         width: 2px;
@@ -238,5 +250,15 @@ $tbody-td-width: $content-widtht * 0.2;
         width: 2px;
         border-radius: $content-border-radius;
         background-color: #242424;
+    }
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width: 481px) and (max-device-width: 812px) {
+    %points {
+        top: 10vw;
+        right: -3vw;
+        height: 10vh;
+        width: 10vw;
     }
 }

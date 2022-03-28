@@ -12,31 +12,51 @@ function Nav() {
                     <NavLink
                         to="/"
                         nav-tooltip="Home"
-                        className={(navData) => navData.isActive ? "icon icon-home-active" : "icon icon-home"} children={undefined}                    ></NavLink>
+                        className={(navData) =>
+                            navData.isActive ? "icon icon-home-active" : "icon icon-home"
+                        }
+                        children={undefined}
+                    ></NavLink>
                 </li>
                 <li className="navigation__item" id="aboutToggler">
                     <NavLink
                         to="/about"
                         nav-tooltip="About"
-                        className={(navData) => navData.isActive ? "icon icon-about-active" : "icon icon-about"} children={undefined}                    ></NavLink>
+                        className={(navData) =>
+                            navData.isActive ? "icon icon-about-active" : "icon icon-about"
+                        }
+                        children={undefined}
+                    ></NavLink>
                 </li>
                 <li className="navigation__item" id="educationToggle">
                     <NavLink
                         to="/education"
                         nav-tooltip="Education"
-                        className={(navData) => navData.isActive ? "icon icon-education-active" : "icon icon-education"} children={undefined}                    ></NavLink>
+                        className={(navData) =>
+                            navData.isActive ? "icon icon-education-active" : "icon icon-education"
+                        }
+                        children={undefined}
+                    ></NavLink>
                 </li>
                 <li className="navigation__item" id="porfolioToggler">
                     <NavLink
                         to="/portfolio"
                         nav-tooltip="Portfolio"
-                        className={(navData) => navData.isActive ? "icon icon-portfolio-active" : "icon icon-portfolio"} children={undefined}                    ></NavLink>
+                        className={(navData) =>
+                            navData.isActive ? "icon icon-portfolio-active" : "icon icon-portfolio"
+                        }
+                        children={undefined}
+                    ></NavLink>
                 </li>
                 <li className="navigation__item" id="contactsToggler">
                     <NavLink
                         to="/contacts"
                         nav-tooltip="Contacts"
-                        className={(navData) => navData.isActive ? "icon icon-contacts-active" : "icon icon-contacts"} children={undefined}                    ></NavLink>
+                        className={(navData) =>
+                            navData.isActive ? "icon icon-contacts-active" : "icon icon-contacts"
+                        }
+                        children={undefined}
+                    ></NavLink>
                 </li>
             </ul>
         </nav>

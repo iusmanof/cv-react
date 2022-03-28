@@ -6,6 +6,90 @@ import nodejs_certificate from "../../images/certificate/nodejs2021q4/nodejs2021
 import nodejs_certificate_pdf from "../../images/certificate/nodejs2021q4/nodejs2021q4.pdf";
 
 import {useSpring, animated} from "react-spring";
+import IEducationInfo from "../../intefaces/IEducationInfo";
+import ICertificateInfo from "../../intefaces/ICertificateInfo";
+
+const educationInfo: IEducationInfo[] = [
+    {
+        id: 1,
+        date: "2009 - 2014",
+        isCertificated: true,
+        title: "Higher education: Belarusian State University of Informatics and  Radioelectronics - Telecommunications Enginee"
+    },
+    {
+        id: 2,
+        date: "2014 - 2017",
+        isCertificated: true,
+        title: "Course: IT Step - Programming Engineer"
+    },
+    {
+        id: 3,
+        date: "2021",
+        isCertificated: true,
+        title: "Course: EPAM RS School - JS/Front-end 2021Q1"
+    },
+    {
+        id: 4,
+        date: "2021",
+        isCertificated: false,
+        title: "Course: EPAM RS School - React 2021Q3"
+    },
+    {
+        id: 5,
+        date: "2021",
+        isCertificated: true,
+        title: "Course: EPAM RS School - NodeJS 2021Q4"
+    }
+];
+
+const educations = educationInfo.map(({isCertificated, title, date}) => {
+    return (
+        <tr>
+            <td>
+                {date}
+                <div className={isCertificated ? "certificate-true" : "certificate-false"}>
+                    {isCertificated ? "[certificated]" : "[completed]"}
+                </div>
+            </td>
+            <td>{title}</td>
+        </tr>
+    );
+});
+
+const certificateInfo: ICertificateInfo[] = [
+    {
+        id: 1,
+        imageUrl: js_certificate,
+        certificatePDF: js_certificate_pdf,
+        title: "CCNA"
+    },
+    {
+        id: 2,
+        imageUrl: js_certificate,
+        certificatePDF: js_certificate_pdf,
+        title: "JS/Front-end"
+    },
+    {
+        id: 3,
+        imageUrl: nodejs_certificate,
+        certificatePDF: nodejs_certificate_pdf,
+        title: "Nodejs"
+    }
+];
+
+const certificates = certificateInfo.map(({imageUrl, certificatePDF, title}) => {
+    return (
+        <li>
+            <img src={imageUrl} alt="nodejs-certificate" />
+            <span>{title}</span>
+            <h4>
+                <a href={certificatePDF} download>
+                    Download {title} (PDF)
+                </a>
+            </h4>
+        </li>
+    );
+});
 
 const Education = () => {
     const props = useSpring({
@@ -20,77 +104,11 @@ const Education = () => {
                 <h2 className="education__header  category__header">Education</h2>
                 <div className="education__content">
                     <table>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    2009 - 2014
-                                    <div className="certificate-true">[certificated]</div>
-                                </td>
-                                <td>
-                                    Higher education: Belarusian State University of Informatics and
-                                    Radioelectronics - Telecommunications Enginee
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    2014 - 2017
-                                    <div className="certificate-true">[certificated]</div>
-                                </td>
-                                <td>Course: IT Step - Programming Engineer</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    2021 <div className="certificate-true">[certificated]</div>
-                                </td>
-                                <td>Course: EPAM RS School - JS/Front-end 2021Q1 </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    2021 <div className="certificate-false">[completed]</div>
-                                </td>
-                                <td>Course: EPAM RS School - React 2021Q3</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    2021 <div className="certificate-true">[certificated]</div>
-                                </td>
-                                <td>Course: EPAM RS School - NodeJS 2021Q4</td>
-                            </tr>
-                        </tbody>
+                        <tbody>{educations}</tbody>
                     </table>
                 </div>
-
                 <h2 className="education__header  category__header">Certificates</h2>
-                <ul className="education__certificates">
-                    <li>
-                        <img src={nodejs_certificate} alt="nodejs-certificate" />
-                        <span>CCNA</span>
-                        <h4>
-                            <a href={nodejs_certificate_pdf} download>
-                                Download
-                            </a>
-                        </h4>
-                    </li>
-                    <li>
-                        <img src={js_certificate} alt="nodejs-certificate" />
-                        <span>JS/Front-end certificate</span>
-                        <h4>
-                            <a href={js_certificate_pdf} download>
-                                Download
-                            </a>
-                        </h4>
-                    </li>
-
-                    <li>
-                        <img src={nodejs_certificate} alt="nodejs-certificate" />
-                        <span>Nodejs certificate</span>
-                        <h4>
-                            <a href={nodejs_certificate_pdf} download>
-                                Download
-                            </a>
-                        </h4>
-                    </li>
-                </ul>
+                <ul className="education__certificates">{certificates}</ul>
             </div>
         </animated.div>
     );

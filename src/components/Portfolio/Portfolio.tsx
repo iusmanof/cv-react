@@ -1,4 +1,4 @@
-import React, {FC} from "react";
+import React, {FC, useState} from "react";
 import "./Portfolio.scss";
 import {useSpring, animated} from "react-spring";
 import IProject from "../../intefaces/IProjects";
@@ -12,35 +12,59 @@ interface IProps {}
 
 const projects: IProject[] = [
     {
+        isFrontEnd: true,
+        isBackEnd: false,
         title: "cv react",
         imageLink:
             "https://user-images.githubusercontent.com/74846667/159911557-1ab2e807-6c16-49ed-8ac7-0f29dc9cb181.PNG",
         projectLink: "https://github.com/iusmanof/cv-react/tree/react-cv"
     },
-     {
+    {
+        isFrontEnd: true,
+        isBackEnd: false,
         title: "burger",
         imageLink:
             "https://user-images.githubusercontent.com/74846667/160389919-51054b38-4965-44bf-b134-2ba5668c3a5e.PNG",
         projectLink: "https://github.com/iusmanof/burger/blob/main/README.MD"
     },
-       {
-        title: "api node nest ...",
+    {
+        isFrontEnd: false,
+        isBackEnd: true,
+        title: "api node nest",
         imageLink:
             "https://user-images.githubusercontent.com/74846667/149664973-83408730-2a26-49f2-aca1-c17fde5f21e5.png",
         projectLink: "https://github.com/iusmanof/nodejs2021Q4-service"
     }
 ];
 
-const projectsHTML = projects.map((project) => {
+const itemProject = ({imageLink, title, projectLink}: IProject) => {
     return (
         <li className="portfolio__project">
-            <img src={project.imageLink} alt="cv" />
-            <span>{project.title}</span>
+            <img src={imageLink} alt="cv" />
+            <span>{title}</span>
             <h4>
-                <a href={project.projectLink}>github link</a>
+                <a href={projectLink}>github: {title}</a>
             </h4>
         </li>
     );
+};
+
+const allProjects = projects.map((project) => {
+    if (project.isFrontEnd || project.isBackEnd) {
+        return itemProject(project);
+    }
+});
+
+const frontendProjects = projects.map((project) => {
+    if (project.isFrontEnd) {
+        return itemProject(project);
+    }
+});
+
+const backendProjects = projects.map((project) => {
+    if (project.isBackEnd) {
+        return itemProject(project);
+    }
 });
 
 const Portfolio: FC<IProps> = () => {
@@ -48,6 +72,9 @@ const Portfolio: FC<IProps> = () => {
         from: {opacity: 0, transform: "translate3d(0,100%,0)"},
         to: {opacity: 1, transform: "translate3d(0%,0,0)"}
     });
+    const [all, setAllProject] = useState(true);
+    const [frontend, setFrontEnd] = useState(false);
+    const [backend, setBackEnd] = useState(false);
 
     return (
         <animated.div style={props}>
@@ -56,16 +83,44 @@ const Portfolio: FC<IProps> = () => {
 
                 <nav className="portfolio__category">
                     <ul>
-                        <li>All</li>
-                        <li>Front-end</li>
-                        <li>Back-end</li>
+                        <li
+                            className={all ? "portfolio__category-active" : ""}
+                            onClick={() => {
+                                setAllProject(true);
+                                setFrontEnd(false);
+                                setBackEnd(false);
+                            }}
+                        >
+                            All
+                        </li>
+                        <li
+                            className={frontend ? "portfolio__category-active" : ""}
+                            onClick={() => {
+                                setAllProject(false);
+                                setFrontEnd(true);
+                                setBackEnd(false);
+                            }}
+                        >
+                            Front-end
+                        </li>
+                        <li
+                            className={backend ? "portfolio__category-active" : ""}
+                            onClick={() => {
+                                setAllProject(false);
+                                setFrontEnd(false);
+                                setBackEnd(true);
+                            }}
+                        >
+                            Back-end
+                        </li>
                     </ul>
                 </nav>
 
                 <ul className="portfolio__projects">
-                     {projectsHTML}
+                    {all && allProjects}
+                    {frontend && <>{frontendProjects}</>}
+                    {backend && <>{backendProjects}</>}
                 </ul>
-               
             </div>
         </animated.div>
     );

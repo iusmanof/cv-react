@@ -21,6 +21,13 @@
     }
     &__certificates {
         @extend %ul-category;
+        flex-direction: column;
+        li h4 a {
+            transition: all 0.5s ease-in;
+        }
+        li h4 a:hover {
+            color: $border-btn-color;
+        }
     }
 }
 
@@ -55,7 +62,7 @@
 @media only screen and (min-device-width: 480px) and (max-device-width: 1024px) {
     .education {
         &__content {
-            font-size: 1.3vw;
+            font-size: 3vw;
         }
     }
     .certificate-true {
@@ -70,10 +77,35 @@
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
     .education {
         &__header {
-            font-size: 4vw;
+            font-size: 11vw;
         }
         &__content {
-            font-size: 2vw;
+            font-size: 5vw;
+        }
+        &__certificates li img {
+            width: 50vw;
+        }
+
+        &__certificates li h4 {
+            font-size: 7vw;
+        }
+    }
+
+    .certificate-true {
+        display: none;
+    }
+    .certificate-false {
+        display: none;
+    }
+}
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+    .education {
+        &__header {
+            font-size: 7vw;
+        }
+        &__content {
+            font-size: 3.5vw;
         }
         &__certificates li img {
             width: 50vw;
@@ -85,10 +117,10 @@
     }
 
     .certificate-true {
-        font-size: 1.3vw;
+        font-size: 2vw;
     }
     .certificate-false {
-        font-size: 1.3vw;
+        font-size: 2vw;
     }
 }
 
@@ -96,10 +128,10 @@
 @media only screen and (min-width: 481px) and (max-device-width: 812px) {
     .education {
         &__header {
-            font-size: 4vw;
+            font-size: 7vw;
         }
         &__content {
-            font-size: 2vw;
+            font-size: 3.5vw;
         }
         &__certificates li img {
             width: 50vw;
@@ -111,9 +143,9 @@
     }
 
     .certificate-true {
-        font-size: 1.3vw;
+        display: none;
     }
     .certificate-false {
-        font-size: 1.3vw;
+        display: none;
     }
 }

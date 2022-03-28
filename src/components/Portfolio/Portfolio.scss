@@ -19,15 +19,15 @@
             @extend %h4-title;
             color: $category-inactive;
         }
-        li:first-child {
-            font-weight: bold;
-            color: $category-active;
-        }
         li:hover {
             cursor: pointer;
             font-weight: bold;
             color: $category-hover;
         }
+    }
+    .portfolio__category-active {
+        font-weight: bold;
+        color: $category-active;
     }
     &__projects {
         @extend %ul-category;
@@ -55,6 +55,9 @@
 
 @media only screen and (min-device-width: 720px) and (max-device-width: 1024px) {
     .portfolio {
+        h2 {
+            font-size: 7vw;
+        }
         &__category ul li {
             font-size: 2vw;
         }
@@ -79,10 +82,10 @@
 @media only screen and (min-device-width: 220px) and (max-device-width: 480px) {
     .portfolio {
         &__header {
-            font-size: 4vw;
+            font-size: 11vw;
         }
         &__category ul li {
-            font-size: 3vw;
+            font-size: 6vw;
         }
         &__projects {
             li {
@@ -90,7 +93,7 @@
                     width: 50vw;
                 }
                 h4 {
-                    font-size: 3vw;
+                    font-size: 6vw;
                 }
             }
         }
@@ -101,10 +104,10 @@
 @media only screen and (min-width: 481px) and (max-device-width: 812px) {
     .portfolio {
         &__header {
-            font-size: 4vw;
+            font-size: 8vw;
         }
         &__category ul li {
-            font-size: 3vw;
+            font-size: 4vw;
         }
         &__projects {
             li {
@@ -112,7 +115,7 @@
                     width: 50vw;
                 }
                 h4 {
-                    font-size: 3vw;
+                    font-size: 4vw;
                 }
             }
         }

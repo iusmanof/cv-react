@@ -32,7 +32,7 @@ function App() {
         if (loading) {
             setTimeout(() => {
                 setLoading(false);
-            }, 1400);
+            }, 700);
         }
     }, [loading]);
 
@@ -41,7 +41,7 @@ function App() {
         setTimeout(() => {
             setLoading(!loading);
             setShow(!show);
-        }, 1400);
+        }, 700);
     };
 
     if (loading) {

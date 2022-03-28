@@ -63,8 +63,8 @@
         width: $aside-icons-width-grid;
 
         .aside__link {
-            width: 30px;
-            height: 30px;
+            width: 3vw;
+            height: 4vh;
         }
     }
     &__footer {
@@ -154,7 +154,7 @@
 /* Smartphones (portrait) ----------- */
 @media only screen and (max-width: 480px) {
     .aside {
-        grid-template-rows: 20px 190px 30px 80px 119px 51px 9px auto 237px;
+        grid-template-rows: 7px 202px 3px 79px 191px 87px 28px auto 68px;
         grid-template-columns: auto 85vw auto;
         width: 100vw;
         font-family: "Roboto", sans-serif;
@@ -176,16 +176,8 @@
         }
 
         &__burger-link {
-            font-size: 5vw;
+            font-size: 7vw;
             margin: 2vw;
-        }
-        &__link img {
-            height: 3vw;
-        }
-
-        &__social-networks {
-            justify-content: space-between;
-            width: 20vw;
         }
 
         &__footer {
@@ -215,8 +207,74 @@
             " . button burger-links . "
             " . . . . "
             " . copyright . . ";
-        grid-template-rows: 1vh 40vh 10vh 4vh 15vh 1vh auto 1vh;
+        grid-template-rows: 1vh 53vh 7vh 4vh 23vh 1vh auto 1vh;
         grid-template-columns: auto 30vw 30vw auto;
         width: 70vw;
+        .aside__link {
+            width: 3vw;
+            height: 8vh;
+        }
+
+        &__photo {
+            width: 20vw;
+        }
+
+        &__header {
+            font-size: 4vw;
+        }
+
+        &__position {
+            font-size: 3vw;
+        }
+
+        &__social-networks {
+            .aside__link {
+                width: 6vw;
+                height: 10vh;
+            }
+        }
+
+        &__burger {
+            &-links {
+                font-size: 4.8vw;
+            }
+        }
+    }
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+    .aside {
+        grid-template-rows: 2px 17vw 8vh 1vh 46vh 1vh auto 1vh;
+        &__burger {
+            &-links {
+                font-size: 3vw;
+            }
+        }
+    }
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    .aside {
+        &__header {
+            font-size: 4vw;
+        }
+
+        &__position {
+            font-size: 3vw;
+        }
+        &__social-networks {
+            .aside__link {
+                width: 6vw;
+                height: 5vh;
+            }
+        }
+        grid-template-rows: 50px 17vw 8vh 1vh 46vh 1vh auto 1px;
+        &__burger {
+            &-links {
+                font-size: 4vw;
+            }
+        }
     }
 }
