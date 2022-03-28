@@ -181,9 +181,14 @@
         }
 
         &__footer {
-            font-size: 2.2vw;
+           display: none;
         }
-
+     &__social-networks {
+            .aside__link {
+               width: 12vw;
+height: 7vh;
+            }
+        }
         .link-vk img {
             height: 2.5vw;
         }
@@ -207,7 +212,7 @@
             " . button burger-links . "
             " . . . . "
             " . copyright . . ";
-        grid-template-rows: 1vh 53vh 7vh 4vh 23vh 1vh auto 1vh;
+        grid-template-rows: 1vh 47vh 7vh 13vh 23vh 1vh auto 1vh;
         grid-template-columns: auto 30vw 30vw auto;
         width: 70vw;
         .aside__link {
@@ -238,6 +243,9 @@
             &-links {
                 font-size: 4.8vw;
             }
+        }
+        &__footer{
+            display: none;
         }
     }
 }

@@ -22,6 +22,9 @@
     &__certificates {
         @extend %ul-category;
         flex-direction: column;
+        li h4 {
+            margin-top: 0;
+        }
         li h4 a {
             transition: all 0.5s ease-in;
         }
