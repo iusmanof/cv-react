@@ -1,24 +1,27 @@
 {
   "files": {
-    "main.css": "/cv-react/static/css/main.12367702.css",
-    "main.js": "/cv-react/static/js/main.8b37908e.js",
+    "main.css": "/cv-react/static/css/main.df3da3e6.css",
+    "main.js": "/cv-react/static/js/main.9ea4abe4.js",
     "static/media/js-fronend2021q1-1.jpg": "/cv-react/static/media/js-fronend2021q1-1.582fdb3d2b4fd59aa5c8.jpg",
     "static/media/nodejs2021q4-1.jpg": "/cv-react/static/media/nodejs2021q4-1.8fe8a7ea1444b371af02.jpg",
-    "static/media/cv_project.png": "/cv-react/static/media/cv_project.52d47c774468395509a4.png",
     "static/media/main_background.png": "/cv-react/static/media/main_background.0bbbf00018c241959227.png",
     "static/media/ava.png": "/cv-react/static/media/ava.32a762339a0b08f860cc.png",
     "static/media/js-fronend2021q1.pdf": "/cv-react/static/media/js-fronend2021q1.2c5c851139ad1d0ad181.pdf",
+    "static/media/nodejs2021q4.pdf": "/cv-react/static/media/nodejs2021q4.ac82e7c80d6c0fe0cf27.pdf",
     "static/media/about-hover.svg": "/cv-react/static/media/about-hover.fb60c08b88caabae6b8c.svg",
     "static/media/about.svg": "/cv-react/static/media/about.8b6f433276ceb122e279.svg",
-    "static/media/vk.svg": "/cv-react/static/media/vk.01b3521edea557fea0c51288496274ba.svg",
+    "static/media/vk-hover.svg": "/cv-react/static/media/vk-hover.0f289fb387b6d80d5097.svg",
+    "static/media/vk.svg": "/cv-react/static/media/vk.5c5ea74e5cc715556abbd029684065bb.svg",
     "static/media/portfolio-hover.svg": "/cv-react/static/media/portfolio-hover.75578af69b29cc1e4817.svg",
     "static/media/portfolio.svg": "/cv-react/static/media/portfolio.0df1bac9de1a43a61575.svg",
-    "static/media/linkedin.svg": "/cv-react/static/media/linkedin.015e332fa9c33cc1d5d330e95d8281bc.svg",
+    "static/media/linkedin-hover.svg": "/cv-react/static/media/linkedin-hover.e4a2cecc0fdf881c1394.svg",
+    "static/media/linkedin.svg": "/cv-react/static/media/linkedin.dd83c433f48fad89991039325fdaceda.svg",
     "index.html": "/cv-react/index.html",
     "static/media/education-hover.svg": "/cv-react/static/media/education-hover.bae0d203dec5b2f6563c.svg",
     "static/media/education.svg": "/cv-react/static/media/education.345ac3472c988be4d6c0.svg",
     "static/media/phone.svg": "/cv-react/static/media/phone.dd5546b9aa96045f5f708a2b116a9be4.svg",
-    "static/media/facebook.svg": "/cv-react/static/media/facebook.ca206bdaed56d2ff45a8b11a909489f2.svg",
+    "static/media/facebook-hover.svg": "/cv-react/static/media/facebook-hover.73e3bf56981898c42f1f.svg",
+    "static/media/facebook.svg": "/cv-react/static/media/facebook.123a6453d77e7460e1d24c0d696b8063.svg",
     "static/media/contacts.svg": "/cv-react/static/media/contacts.11d3bbf0f5043746a0e5.svg",
     "static/media/contacts-hover.svg": "/cv-react/static/media/contacts-hover.d43677423338ddd8adf0.svg",
     "static/media/home-hover.svg": "/cv-react/static/media/home-hover.7b7d7becc846b981b3ed.svg",
@@ -29,11 +32,11 @@
     "static/media/right.svg": "/cv-react/static/media/right.bb786ae08b770fc151ff.svg",
     "static/media/left-hover.svg": "/cv-react/static/media/left-hover.7f88eccc3ff90d397b66.svg",
     "static/media/left.svg": "/cv-react/static/media/left.b5b686b3dea5c9404aac.svg",
-    "main.12367702.css.map": "/cv-react/static/css/main.12367702.css.map",
-    "main.8b37908e.js.map": "/cv-react/static/js/main.8b37908e.js.map"
+    "main.df3da3e6.css.map": "/cv-react/static/css/main.df3da3e6.css.map",
+    "main.9ea4abe4.js.map": "/cv-react/static/js/main.9ea4abe4.js.map"
   },
   "entrypoints": [
-    "static/css/main.12367702.css",
-    "static/js/main.8b37908e.js"
+    "static/css/main.df3da3e6.css",
+    "static/js/main.9ea4abe4.js"
   ]
 }
