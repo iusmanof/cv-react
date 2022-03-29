@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/cv-react/static/css/main.1bd480a5.css",
+    "main.css": "/cv-react/static/css/main.2eac2390.css",
     "main.js": "/cv-react/static/js/main.9ea4abe4.js",
     "static/media/js-fronend2021q1-1.jpg": "/cv-react/static/media/js-fronend2021q1-1.582fdb3d2b4fd59aa5c8.jpg",
     "static/media/nodejs2021q4-1.jpg": "/cv-react/static/media/nodejs2021q4-1.8fe8a7ea1444b371af02.jpg",
@@ -32,11 +32,11 @@
     "static/media/right.svg": "/cv-react/static/media/right.bb786ae08b770fc151ff.svg",
     "static/media/left-hover.svg": "/cv-react/static/media/left-hover.7f88eccc3ff90d397b66.svg",
     "static/media/left.svg": "/cv-react/static/media/left.b5b686b3dea5c9404aac.svg",
-    "main.1bd480a5.css.map": "/cv-react/static/css/main.1bd480a5.css.map",
+    "main.2eac2390.css.map": "/cv-react/static/css/main.2eac2390.css.map",
     "main.9ea4abe4.js.map": "/cv-react/static/js/main.9ea4abe4.js.map"
   },
   "entrypoints": [
-    "static/css/main.1bd480a5.css",
+    "static/css/main.2eac2390.css",
     "static/js/main.9ea4abe4.js"
   ]
 }
