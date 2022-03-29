@@ -2,10 +2,7 @@ import {ReactElement} from "react";
 import {useSpring, animated} from "react-spring";
 import "./Aside.scss";
 import ava from "../../images/ava.png";
-import vk from "../../images/icons/vk.svg";
-import facebook from "../../images/icons/facebook.png";
-import linkedin from "../../images/icons/linkedin.png";
-import cv_pdf from "../../images/certificate/js-fronend2021q1/js-fronend2021q1.pdf";
+import cv_pdf from "../../cv/CV.pdf";
 
 interface IAside {
     homeLink?: ReactElement;

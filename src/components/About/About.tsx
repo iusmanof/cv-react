@@ -34,7 +34,7 @@ const About = () => {
 
                     <li>
                         I have experience in developing using popular frontend frameworks(
-                        <b> React</b>,<b> Readux toolkit</b>,<b> Flux</b>)
+                        <b> React</b>,<b> Redux toolkit</b>,<b> Flux</b>)
                     </li>
 
                     <li>
@@ -49,7 +49,7 @@ const About = () => {
 
                     <li>
                         Initial experience writing automated tests (<b>Jest</b>,<b> Enzyme</b>,
-                        <b> React Testing Library</b>
+                        <b> React Testing Library</b>,
                         <b> Mocha</b>)
                     </li>
 
