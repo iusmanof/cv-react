@@ -1,7 +1,12 @@
 {
   "files": {
     "main.css": "/cv-react/static/css/main.2eac2390.css",
-    "main.js": "/cv-react/static/js/main.9ea4abe4.js",
+    "main.js": "/cv-react/static/js/main.920c9f8b.js",
+    "static/media/ccna.pdf": "/cv-react/static/media/ccna.0d70c67c2c2c85507793.pdf",
+    "static/media/ccna.jpg": "/cv-react/static/media/ccna.83bfae747269ffafd490.jpg",
+    "static/media/it-essential.pdf": "/cv-react/static/media/it-essential.0fea659e85459d181b30.pdf",
+    "static/media/it-essential.jpg": "/cv-react/static/media/it-essential.32fb0f2b34d03211f2ea.jpg",
+    "static/media/CV.pdf": "/cv-react/static/media/CV.a8a45b45c916452ef96d.pdf",
     "static/media/js-fronend2021q1-1.jpg": "/cv-react/static/media/js-fronend2021q1-1.582fdb3d2b4fd59aa5c8.jpg",
     "static/media/nodejs2021q4-1.jpg": "/cv-react/static/media/nodejs2021q4-1.8fe8a7ea1444b371af02.jpg",
     "static/media/main_background.png": "/cv-react/static/media/main_background.0bbbf00018c241959227.png",
@@ -33,10 +38,10 @@
     "static/media/left-hover.svg": "/cv-react/static/media/left-hover.7f88eccc3ff90d397b66.svg",
     "static/media/left.svg": "/cv-react/static/media/left.b5b686b3dea5c9404aac.svg",
     "main.2eac2390.css.map": "/cv-react/static/css/main.2eac2390.css.map",
-    "main.9ea4abe4.js.map": "/cv-react/static/js/main.9ea4abe4.js.map"
+    "main.920c9f8b.js.map": "/cv-react/static/js/main.920c9f8b.js.map"
   },
   "entrypoints": [
     "static/css/main.2eac2390.css",
-    "static/js/main.9ea4abe4.js"
+    "static/js/main.920c9f8b.js"
   ]
 }
