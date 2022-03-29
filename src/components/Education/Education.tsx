@@ -1,5 +1,9 @@
 import "./Education.scss";
 
+import ccna_certificate from "../../images/certificate/ccna/ccna.jpg";
+import ccna_certificate_pdf from "../../images/certificate/ccna/ccna.pdf";
+import itessential_certificate from "../../images/certificate/it-essential/it-essential.jpg";
+import itessential_certificate_pdf from "../../images/certificate/it-essential/it-essential.pdf";
 import js_certificate from "../../images/certificate/js-fronend2021q1/js-fronend2021q1-1.jpg";
 import js_certificate_pdf from "../../images/certificate/js-fronend2021q1/js-fronend2021q1.pdf";
 import nodejs_certificate from "../../images/certificate/nodejs2021q4/nodejs2021q4-1.jpg";
@@ -59,22 +63,28 @@ const educations = educationInfo.map(({isCertificated, title, date}) => {
 const certificateInfo: ICertificateInfo[] = [
     {
         id: 1,
-        imageUrl: js_certificate,
-        certificatePDF: js_certificate_pdf,
+        imageUrl: ccna_certificate,
+        certificatePDF: ccna_certificate_pdf,
         title: "CCNA"
     },
     {
         id: 2,
-        imageUrl: js_certificate,
+        imageUrl: itessential_certificate,
         certificatePDF: js_certificate_pdf,
-        title: "JS/Front-end"
+        title: "IT Essential"
     },
     {
         id: 3,
+        imageUrl: js_certificate,
+        certificatePDF: itessential_certificate_pdf,
+        title: "JS/Front-end"
+    },
+    {
+        id: 4,
         imageUrl: nodejs_certificate,
         certificatePDF: nodejs_certificate_pdf,
         title: "Nodejs"
-    }
+    },
 ];
 
 const certificates = certificateInfo.map(({imageUrl, certificatePDF, title}) => {
