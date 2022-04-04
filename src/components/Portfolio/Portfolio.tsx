@@ -16,7 +16,7 @@ const projects: IProject[] = [
         isBackEnd: false,
         title: "cv react",
         imageLink:
-            "https://user-images.githubusercontent.com/74846667/159911557-1ab2e807-6c16-49ed-8ac7-0f29dc9cb181.PNG",
+            "https://user-images.githubusercontent.com/74846667/161420131-57c5db05-1e7a-4270-afeb-957523c9a9d7.PNG",
         projectLink: "https://github.com/iusmanof/cv-react/tree/react-cv"
     },
     {

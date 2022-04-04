@@ -30,6 +30,8 @@
         width: 12vw;
         border: 3px solid $color-white;
         border-radius: 50%;
+        background-repeat: no-repeat;
+        background-size: contain;
     }
     &__header {
         grid-area: name-surname;

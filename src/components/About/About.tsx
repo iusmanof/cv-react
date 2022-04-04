@@ -49,8 +49,7 @@ const About = () => {
 
                     <li>
                         Initial experience writing automated tests (<b>Jest</b>,<b> Enzyme</b>,
-                        <b> React Testing Library</b>,
-                        <b> Mocha</b>)
+                        <b> React Testing Library</b>,<b> Mocha</b>)
                     </li>
 
                     <li>

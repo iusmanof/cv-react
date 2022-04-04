@@ -84,7 +84,7 @@ const certificateInfo: ICertificateInfo[] = [
         imageUrl: nodejs_certificate,
         certificatePDF: nodejs_certificate_pdf,
         title: "Nodejs"
-    },
+    }
 ];
 
 const certificates = certificateInfo.map(({imageUrl, certificatePDF, title}) => {
