@@ -43,6 +43,7 @@ const Home: FC<IProps> = () => {
                                 <div className="home__stack">
                                     <span>postgressql</span>
                                     <span>typeorm</span>
+                                    <span>Sequelize</span>
                                 </div>
                                 <div className="home__stack">
                                     <span>jest</span>
