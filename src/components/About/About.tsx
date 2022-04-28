@@ -23,6 +23,9 @@ const About = () => {
             <p className="about__skills">
                 <ul>
                     <li>
+                        English: B1
+                    </li>
+                    <li>
                         I know the basics of the web direction and use
                         <b> HTML</b>,<b> CSS</b>,<b> SASS(SCSS)</b>,<b> BEM</b>
                     </li>
@@ -34,7 +37,7 @@ const About = () => {
 
                     <li>
                         I have experience in developing using popular frontend frameworks(
-                        <b> React</b>,<b> Redux toolkit</b>,<b> Flux</b>)
+                        <b> React</b>,<b> Redux-toolkit</b>,<b> Flux</b>, <b>Angular</b>)
                     </li>
 
                     <li>
@@ -44,7 +47,7 @@ const About = () => {
 
                     <li>
                         I used DB (<b>PostgreSQL</b>,<b> MongoDB</b>) in my projects with{" "}
-                        <b> Typeorm</b>
+                        <b>Typeorm, Sequelize</b>
                     </li>
 
                     <li>

@@ -33,7 +33,7 @@ const Home: FC<IProps> = () => {
                                     <span>css</span>
                                     <span>js</span>
                                     <span>react</span>
-                                    <span>redux</span>
+                                    <span>angular</span>
                                 </div>
                                 <div className="home__stack">
                                     <span>node</span>
@@ -43,7 +43,7 @@ const Home: FC<IProps> = () => {
                                 <div className="home__stack">
                                     <span>postgressql</span>
                                     <span>typeorm</span>
-                                    <span>Sequelize</span>
+                                    <span>sequelize</span>
                                 </div>
                                 <div className="home__stack">
                                     <span>jest</span>
