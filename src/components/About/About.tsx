@@ -27,7 +27,7 @@ const About = () => {
                     </li>
                     <li>
                         I know the basics of the web direction and use
-                        <b> HTML</b>,<b> CSS</b>,<b> SASS(SCSS)</b>,<b> BEM</b>
+                        <b> HTML</b>,<b> CSS</b>,<b> SASS(SCSS)</b>,<b> BEM</b>,<b> Bootstrap</b>,<b> Ant Design</b>
                     </li>
 
                     <li>
