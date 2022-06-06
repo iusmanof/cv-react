@@ -1,5 +1,5 @@
 export enum CertificateActionTypes {
-    FETCH_CERTIFICATE = 'FETCH_CERTIFICATE',
+    FETCH_CERTIFICATE = "FETCH_CERTIFICATE"
 }
 
 export interface ICertificateState {
@@ -8,10 +8,9 @@ export interface ICertificateState {
     title: string;
 }
 
-
 interface FetchCertificateAction {
-   type: CertificateActionTypes.FETCH_CERTIFICATE,
-   payload: Array<ICertificateState>,
+    type: CertificateActionTypes.FETCH_CERTIFICATE;
+    payload: Array<ICertificateState>;
 }
 
-export type CertificateAction = FetchCertificateAction ;
+export type CertificateAction = FetchCertificateAction;

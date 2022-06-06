@@ -17,11 +17,15 @@ const Education = () => {
                 <h2 className="education__header  category__header">Education</h2>
                 <div className="education__content">
                     <table>
-                        <tbody><EducationList /></tbody>
+                        <tbody>
+                            <EducationList />
+                        </tbody>
                     </table>
                 </div>
                 <h2 className="education__header  category__header">Certificates</h2>
-                <ul className="education__certificates"><CertificateList /></ul>
+                <ul className="education__certificates">
+                    <CertificateList />
+                </ul>
             </div>
         </animated.div>
     );

@@ -1,8 +1,7 @@
-import { IEducationState, EducationAction, EdcucationActionTypes } from "../../types/educationType"
+import {IEducationState, EducationAction, EdcucationActionTypes} from "../../types/educationType";
 
-
-const  initialState: Array<IEducationState> = [
-     {
+const initialState: Array<IEducationState> = [
+    {
         date: "2009 - 2014",
         isCertificated: true,
         title: "Higher education: Belarusian State University of Informatics and  Radioelectronics - Telecommunications Enginee"
@@ -27,15 +26,16 @@ const  initialState: Array<IEducationState> = [
         isCertificated: true,
         title: "Course: EPAM RS School - NodeJS 2021Q4"
     }
-] 
-  
+];
 
-export const educationReducer = (state = initialState, action: EducationAction): Array<IEducationState> => {
-    switch(action.type) {
+export const educationReducer = (
+    state = initialState,
+    action: EducationAction
+): Array<IEducationState> => {
+    switch (action.type) {
         case EdcucationActionTypes.FETCH_EDUCATION:
-            return action.payload
-        default: 
+            return action.payload;
+        default:
             return state;
     }
-
-}
+};

@@ -1,5 +1,5 @@
-import * as EducationActionCreators from './education' 
+import * as EducationActionCreators from "./education";
 
 export default {
     ...EducationActionCreators
-}
+};

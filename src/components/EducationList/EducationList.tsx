@@ -1,16 +1,19 @@
-import { useTypedSelector } from "../../hooks/useTypedSelector";
-
+import {useTypedSelector} from "../../hooks/useTypedSelector";
 
 const EducationList = () => {
-    const data = useTypedSelector(state => state.education)
-     return (
-            <>
-                {data.map(({isCertificated, title, date}) => {
+    const data = useTypedSelector((state) => state.education);
+    return (
+        <>
+            {data.map(({isCertificated, title, date}) => {
                 return (
                     <tr>
                         <td>
                             {date}
-                            <div className={isCertificated ? "certificate-true" : "certificate-false"}>
+                            <div
+                                className={
+                                    isCertificated ? "certificate-true" : "certificate-false"
+                                }
+                            >
                                 {isCertificated ? "[certificated]" : "[completed]"}
                             </div>
                         </td>
@@ -18,8 +21,8 @@ const EducationList = () => {
                     </tr>
                 );
             })}
-            </>
+        </>
     );
-}
+};
 
-export default EducationList
+export default EducationList;

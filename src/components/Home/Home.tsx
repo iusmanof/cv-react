@@ -32,18 +32,10 @@ const Home: FC<IProps> = () => {
                                     <span>html</span>
                                     <span>css</span>
                                     <span>js</span>
+                                </div>
+                                <div className="home__stack">
                                     <span>react</span>
-                                    <span>angular</span>
-                                </div>
-                                <div className="home__stack">
-                                    <span>node</span>
-                                    <span>express</span>
-                                    <span>nest.js</span>
-                                </div>
-                                <div className="home__stack">
-                                    <span>postgressql</span>
-                                    <span>typeorm</span>
-                                    <span>sequelize</span>
+                                    <span>react-redux</span>
                                 </div>
                                 <div className="home__stack">
                                     <span>jest</span>

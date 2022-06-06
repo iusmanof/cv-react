@@ -22,12 +22,11 @@ const About = () => {
             <h2 className="about__header category__header">Skills</h2>
             <p className="about__skills">
                 <ul>
-                    <li>
-                        English: B1
-                    </li>
+                    <li>English: B1</li>
                     <li>
                         I know the basics of the web direction and use
-                        <b> HTML</b>,<b> CSS</b>,<b> SASS(SCSS)</b>,<b> BEM</b>,<b> Bootstrap</b>,<b> Ant Design</b>
+                        <b> HTML</b>,<b> CSS</b>,<b> SASS(SCSS)</b>,<b> BEM</b>,<b> Bootstrap</b>,
+                        <b> Ant Design</b>
                     </li>
 
                     <li>
@@ -46,7 +45,7 @@ const About = () => {
                     </li>
 
                     <li>
-                        I used DB (<b>PostgreSQL</b>,<b> MongoDB</b>) in my projects with{" "}
+                        I used DB (<b>PostgreSQL</b>) in my projects with{" "}
                         <b>Typeorm, Sequelize</b>
                     </li>
 
